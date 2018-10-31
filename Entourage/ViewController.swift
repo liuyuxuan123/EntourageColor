@@ -14,18 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let aSubview = UIView(frame: CGRect(x: 100, y: 100, width: 300, height: 300))
-        aSubview.backgroundColor = UIColor.MellowYellow
+        aSubview.backgroundColor = UIColor.red
         self.view.addSubview(aSubview)
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
         
-        UIColor.orange.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        print("Red -> \(red * 255)")
-        print("Green -> \(green * 255)")
-        print("Blue -> \(blue * 255)")
-        print("Alpha -> \(alpha)")
+        let bSubView = UIView(frame: CGRect(x: 100, y: 450, width: 300, height: 300))
+        bSubView.backgroundColor = UIColor.VitalRed
+        self.view.addSubview(bSubView)
+        
+        print(UIColor.red.rgba)
+        print(UIColor.VitalRed.rgba)
+        print(UIColor.VitalBlue.rgba)
         
     }
 

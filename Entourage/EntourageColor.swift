@@ -14,12 +14,6 @@ import UIKit
 
 extension UIColor {
     
-    enum UIGradientStyle {
-        case LeftToRight
-        case TopToBottom
-        case Diagonal
-    }
-    
     // MARK: Apple Suggested Colors
     static var VitalRed: UIColor        {    return #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1)    }
     static var VitalOrange: UIColor     {    return #colorLiteral(red: 1, green: 0.5843137255, blue: 0, alpha: 1)    }
@@ -264,8 +258,20 @@ extension UIColor {
     // More Color
     // Color name translation
     
+}
+
+extension UIColor{
+    
+    //  Gradient Types
+    enum UIGradientStyle {
+        case LeftToRight
+        case TopToBottom
+        case Diagonal
+    }
+    
+    // Initialzation require the size of the field
     convenience init(withGradient gradient: UIGradientStyle, withFrame frame: CGRect, withColors colors: Array<UIColor>){
-       
+        
         // Create our background gradient layer
         let backgroundGradientLayer = CAGradientLayer()
         // Set the frame to our object's size (This is important for the result)
@@ -275,7 +281,7 @@ extension UIColor {
         for color in colors {
             cgColors.append(color.cgColor)
         }
-    
+        
         switch gradient {
         case .LeftToRight:
             backgroundGradientLayer.colors = cgColors
@@ -294,7 +300,7 @@ extension UIColor {
             let backgroundGradientImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             self.init(patternImage: backgroundGradientImage!)
-    
+            
         case .Diagonal:
             backgroundGradientLayer.colors = cgColors
             backgroundGradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
@@ -306,7 +312,15 @@ extension UIColor {
             self.init(patternImage: backgroundGradientImage!)
         }
     }
-    
-    
-    
+}
+
+extension UIColor {
+    var rgba: (red: Int, green: Int, blue: Int, alpha: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (Int(red * 255), Int(green * 255), Int(blue * 255), alpha)
+    }
 }
