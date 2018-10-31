@@ -253,8 +253,8 @@ extension UIColor {
     static func Beijingmaolab() -> UIColor   {    return #colorLiteral(red: 0.1529411765, green: 0.4039215686, blue: 0.5764705882, alpha: 1)    }  //  北京毛蓝色
     static func Canglv() -> UIColor          {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍绿色
 
-
-    
+    // More Color
+    // Color name translation
     
     convenience init(withGradient gradient: UIGradientStyle, withFrame frame: CGRect, withColors colors: Array<UIColor>){
        
