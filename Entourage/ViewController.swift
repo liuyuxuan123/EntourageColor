@@ -24,6 +24,11 @@ class ViewController: UIViewController {
         print(UIColor.red.rgba)
         print(UIColor.VitalRed.rgba)
         print(UIColor.VitalBlue.rgba)
+        print(UIColor.VitalRed.hsba)
+        
+        
+        let a = UIColor(withGradient: .LeftToRight, withFrame: CGRect(x: 20, y: 20, width: 100, height: 100), withColors: [UIColor.RedWoodRed,UIColor.BarnRed,UIColor.ChiliRed])
+        
         
     }
 
