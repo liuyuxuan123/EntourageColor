@@ -20,8 +20,17 @@ extension UIColor {
         case Diagonal
     }
     
+    // MARK: Apple Suggested Colors
+    static var VitalRed: UIColor        {    return #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1)    }
+    static var VitalOrange: UIColor     {    return #colorLiteral(red: 1, green: 0.5843137255, blue: 0, alpha: 1)    }
+    static var VitalYellow: UIColor     {    return #colorLiteral(red: 1, green: 0.8, blue: 0, alpha: 1)    }
+    static var VitalGreen: UIColor      {    return #colorLiteral(red: 0.2980392157, green: 0.8509803922, blue: 0.3921568627, alpha: 1)    }
+    static var VitalTealBlue: UIColor   {    return #colorLiteral(red: 0.3529411765, green: 0.7843137255, blue: 0.9803921569, alpha: 1)    }
+    static var VitalBlue: UIColor       {    return #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)    }
+    static var VitalPurple: UIColor     {    return #colorLiteral(red: 0.3450980392, green: 0.337254902, blue: 0.8392156863, alpha: 1)    }
+    static var VitalPink: UIColor       {    return #colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)    }
     
-    // MARK: Yellow Color
+    // MARK: Yellow Colors
     static var MellowYellow: UIColor    {    return #colorLiteral(red: 0.9725490196, green: 0.8705882353, blue: 0.4941176471, alpha: 1)    }
     static var CyberYellow: UIColor     {    return #colorLiteral(red: 1, green: 0.8274509804, blue: 0, alpha: 1)    }
     static var RoyalYellow: UIColor     {    return #colorLiteral(red: 0.9803921569, green: 0.8549019608, blue: 0.368627451, alpha: 1)    }
@@ -43,7 +52,7 @@ extension UIColor {
     static var SepiaYellow: UIColor     {    return #colorLiteral(red: 0.8901960784, green: 0.7176470588, blue: 0.4705882353, alpha: 1)    }
     
     
-    // MARK: Orange Color
+    // MARK: Orange Colors
     static var GoldOrange: UIColor      {    return #colorLiteral(red: 0.9764705882, green: 0.6509803922, blue: 0.007843137255, alpha: 1)    }
     static var GoldenrodOrange: UIColor {    return #colorLiteral(red: 0.8588235294, green: 0.6470588235, blue: 0.1254901961, alpha: 1)    }
     static var PumpkinOrange: UIColor   {    return #colorLiteral(red: 1, green: 0.4549019608, blue: 0.09019607843, alpha: 1)    }
@@ -65,7 +74,7 @@ extension UIColor {
     static var SpiceOrange: UIColor     {    return #colorLiteral(red: 0.4745098039, green: 0.2196078431, blue: 0.007843137255, alpha: 1)    }
     
     
-    // MARK: Red Col  or
+    // MARK: Red Colors
     static var SalmonRed: UIColor       {    return #colorLiteral(red: 1, green: 0.5059199929, blue: 0.4467020631, alpha: 1)    }
     static var ScarletRed: UIColor      {    return #colorLiteral(red: 1, green: 0.1411764706, blue: 0, alpha: 1)    }
     static var BarnRed: UIColor         {    return #colorLiteral(red: 0.4862745098, green: 0.03921568627, blue: 0.007843137255, alpha: 1)    }
@@ -87,7 +96,7 @@ extension UIColor {
     static var MahoganyRed: UIColor     {    return #colorLiteral(red: 0.2588235294, green: 0.05098039216, blue: 0.03529411765, alpha: 1)    }
     
     
-    // MARK: Pink Color
+    // MARK: Pink Colors
     static var RubyPink: UIColor        {    return #colorLiteral(red: 0.8784313725, green: 0.06666666667, blue: 0.3725490196, alpha: 1)    }
     static var UltraPink: UIColor       {    return #colorLiteral(red: 1, green: 0.4352941176, blue: 1, alpha: 1)    }
     static var ThulianPink: UIColor     {    return #colorLiteral(red: 0.8705882353, green: 0.4352941176, blue: 0.631372549, alpha: 1)    }
@@ -108,7 +117,7 @@ extension UIColor {
     static var LemonadePink: UIColor    {    return #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.7843137255, alpha: 1)    }
     static var FlamingoPink: UIColor    {    return #colorLiteral(red: 0.9882352941, green: 0.6392156863, blue: 0.7176470588, alpha: 1)    }
     
-    // MARK: Violet Color
+    // MARK: Violet Colors
     static var HibiscusViolet: UIColor  {    return #colorLiteral(red: 0.7058823529, green: 0.2156862745, blue: 0.3411764706, alpha: 1)    }
     static var MauveViolet: UIColor     {    return #colorLiteral(red: 0.4705882353, green: 0.2941176471, blue: 0.5176470588, alpha: 1)    }
     static var MulberryViolet: UIColor  {    return #colorLiteral(red: 0.7764705882, green: 0.2941176471, blue: 0.5490196078, alpha: 1)    }
@@ -130,7 +139,7 @@ extension UIColor {
     static var EggplantViolet: UIColor  {    return #colorLiteral(red: 0.1921568627, green: 0.07843137255, blue: 0.1960784314, alpha: 1)    }
     
     
-    // MARK: Blue Color
+    // MARK: Blue Colors
     static var YaleBlue: UIColor        {    return #colorLiteral(red: 0.05490196078, green: 0.2980392157, blue: 0.5725490196, alpha: 1)    }
     static var PigeonBlue: UIColor      {    return #colorLiteral(red: 0.4470588235, green: 0.5215686275, blue: 0.6470588235, alpha: 1)    }
     static var SkyBlue: UIColor         {    return #colorLiteral(red: 0.5843137255, green: 0.7843137255, blue: 0.8470588235, alpha: 1)    }
@@ -151,7 +160,7 @@ extension UIColor {
     static var PrussianBlue: UIColor    {    return #colorLiteral(red: 0, green: 0.1921568627, blue: 0.3176470588, alpha: 1)    }
     static var SpaceBlue: UIColor       {    return #colorLiteral(red: 0.1098039216, green: 0.1607843137, blue: 0.3176470588, alpha: 1)    }
     
-    // MARK: Green Color
+    // MARK: Green Colors
     static var ForestGreen: UIColor     {    return #colorLiteral(red: 0.0431372549, green: 0.4, blue: 0.137254902, alpha: 1)    }
     static var SageGreen: UIColor       {    return #colorLiteral(red: 0.6156862745, green: 0.7568627451, blue: 0.5137254902, alpha: 1)    }
     static var OliveGreen: UIColor      {    return #colorLiteral(red: 0.4392156863, green: 0.5098039216, blue: 0.2196078431, alpha: 1)    }
@@ -172,7 +181,7 @@ extension UIColor {
     static var SacramentoGreen: UIColor {    return #colorLiteral(red: 0.01568627451, green: 0.2235294118, blue: 0.1529411765, alpha: 1)    }
     static var SeaGreen: UIColor        {    return #colorLiteral(red: 0.1803921569, green: 0.5450980392, blue: 0.3411764706, alpha: 1)    }
     
-    // MARK: Brown Color
+    // MARK: Brown Colors
     static var CedarBrown: UIColor      {    return #colorLiteral(red: 0.2941176471, green: 0.2274509804, blue: 0.1490196078, alpha: 1)    }
     static var CinnamonBrown: UIColor   {    return #colorLiteral(red: 0.3843137255, green: 0.1647058824, blue: 0.05882352941, alpha: 1)    }
     static var BrunetteBrown: UIColor   {    return #colorLiteral(red: 0.2274509804, green: 0.1215686275, blue: 0.01568627451, alpha: 1)    }
@@ -194,7 +203,7 @@ extension UIColor {
     static var RussetBrown: UIColor     {    return #colorLiteral(red: 0.4980392157, green: 0.2745098039, blue: 0.1058823529, alpha: 1)    }
     
     
-    // MARK: Gray Color
+    // MARK: Gray Colors
     static var FossilGray: UIColor      {    return #colorLiteral(red: 0.4705882353, green: 0.4470588235, blue: 0.462745098, alpha: 1)    }
     static var MinkGray: UIColor        {    return #colorLiteral(red: 0.5333333333, green: 0.5019607843, blue: 0.4823529412, alpha: 1)    }
     static var PearlGray: UIColor       {    return #colorLiteral(red: 0.8509803922, green: 0.8666666667, blue: 0.862745098, alpha: 1)    }
@@ -216,7 +225,7 @@ extension UIColor {
     static var CharcoalGray: UIColor    {    return #colorLiteral(red: 0.1333333333, green: 0.1254901961, blue: 0.1294117647, alpha: 1)    }
     
     
-    // Chinese Tradition Color
+    // Chinese Tradition Colors
     
     static var Chengdehui: UIColor      {    return #colorLiteral(red: 0.4588235294, green: 0.4588235294, blue: 0.4392156863, alpha: 1)    }  //  承德灰
     static var Yuanqing: UIColor        {    return #colorLiteral(red: 0.2431372549, green: 0.2352941176, blue: 0.2392156863, alpha: 1)    }  //  元青
