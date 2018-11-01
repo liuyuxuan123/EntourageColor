@@ -261,6 +261,7 @@ extension UIColor {
 }
 
 // Gradient Color
+//
 extension UIColor{
     
     //  Gradient Types
@@ -321,38 +322,67 @@ extension UIColor{
 // If your UIColor object is generated from pattern
 // there will be no RGB value. And it's return value will be (0, 0, 0, 0.0)
 extension UIColor {
-    var rgba: (red: Int, green: Int, blue: Int, alpha: CGFloat) {
+    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
         getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return (Int(red * 255), Int(green * 255), Int(blue * 255), alpha)
+        return (red * 255, green * 255, blue * 255, alpha)
     }
 }
+
 
 // HSBA Values Getter
 // If your UIColor object is generated from pattern
 // there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
 extension UIColor {
-    var hsba: (hue: Int, Saturation: CGFloat, Brigtness: CGFloat, alpha: CGFloat) {
+    var hsba: (hue: CGFloat, Saturation: CGFloat, Brigtness: CGFloat, alpha: CGFloat) {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brigtness: CGFloat = 0
         var alpha: CGFloat = 0
         getHue(&hue, saturation: &saturation, brightness: &brigtness, alpha: &alpha)
-        return (Int(hue * 360), saturation, brigtness, alpha)
+        return (hue * 360, saturation, brigtness, alpha)
     }
 }
 
 // HSV Values Getter
 // HSV == HSB
 extension UIColor {
-    var hsva: (hue: Int, Saturation: CGFloat, Value: CGFloat, alpha: CGFloat) {
+    var hsva: (hue: CGFloat, Saturation: CGFloat, Value: CGFloat, alpha: CGFloat) {
         let (hue,saturation,value,alpha) = self.hsba
         return (hue,saturation,value,alpha)
     }
 }
 
 
+// HSLA Values Getter
+// If your UIColor object is generated from pattern
+// there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
+extension UIColor {
+    var hsla: (hue: CGFloat, Saturation: CGFloat, Lightness: CGFloat, alpha: CGFloat) {
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        var lightness : CGFloat = (2 - saturation) * brightness
+        saturation = saturation * brightness
+        saturation /= ( lightness <= 1 ) ? lightness : 2 - lightness
+        lightness /= 2
+        return (hue * 360, saturation, lightness, alpha)
+    }
+}
+
+// Construct UIColor using HSL value
+extension UIColor{
+    convenience public init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat) {
+        let t = saturation * (lightness < 0.5 ? lightness : 1 - lightness);
+        let b = lightness + t
+        let s = lightness > 0 ? 2 * t / b : saturation
+        let h = hue
+        self.init(hue: h, saturation: s, brightness: b, alpha: alpha)
+    }
+}
 
