@@ -528,6 +528,12 @@ extension UIColor{
 }
 
 
+extension UIColor{
+    var hex: String {
+        return "0xFFFFFF"
+    }
+}
+
 
 extension UIColor{
     static public func ComplementaryColor(of color: UIColor) -> UIColor {
@@ -571,13 +577,65 @@ extension UIColor{
     }
     
     static public func TriadicColors(of color: UIColor) -> [UIColor] {
-        return [.red]
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        
+        if (alpha == 0) {
+            return Array(repeating: UIColor.clear, count: 2)
+        }
+        
+        hue *= 360
+        saturation *= 100
+        brightness *= 100
+        
+        if hue > 240.0 {
+            return [UIColor(hue: hue - 240.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 120.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }else if hue > 120{
+            return [UIColor(hue: hue + 120.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 120.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }else{
+            return [UIColor(hue: hue + 120.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue + 240.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }
     }
     
     static public func TetradicColors(of color: UIColor) -> [UIColor] {
-        return [.red]
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        
+        if (alpha == 0) {
+            return Array(repeating: UIColor.clear, count: 3)
+        }
+        
+        hue *= 360
+        saturation *= 100
+        brightness *= 100
+        
+        if hue > 270.0 {
+            return [UIColor(hue: hue - 270.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 90.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }else if hue > 180.0{
+            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 90.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }else if hue > 90.0{
+            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue + 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }else{
+            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue + 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                    UIColor(hue: hue + 270.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        }
     }
-    
-    
+
     
 }
