@@ -38,8 +38,8 @@ class ViewController: UIViewController {
         let dColor = UIColor(red: 25 / 255.0, green: 25 / 255.0 , blue: 25 / 255.0, alpha: 1.0)
         print("dColor' rgb -> \(dColor.rgba)")
         
-        
-        
+        bSubView.backgroundColor = UIColor(hexCode: 0xFFD857).withAlphaComponent(0.5)
+        print(bColor.hexCode)
         
     }
 

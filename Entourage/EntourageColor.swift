@@ -529,8 +529,13 @@ extension UIColor{
 
 
 extension UIColor{
-    var hex: String {
-        return "0xFFFFFF"
+    // Example:
+    // self.view.backgroundColor = UIColor(hexCode: 0xFFD857).withAlphaComponent(0.5)
+    convenience public init(hexCode: Int){
+        self.init(red: CGFloat((hexCode >> 16) & 0xFF) / 255.0,
+                  green: CGFloat((hexCode >> 8) & 0xFF) / 255.0,
+                  blue: CGFloat(hexCode & 0xFF) / 255.0,
+                  alpha: 1.0 )
     }
 }
 
