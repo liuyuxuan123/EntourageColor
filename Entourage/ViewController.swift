@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
         
         let bColor = UIColor(hue: 122 / 360.0, saturation: 0.30, lightness: 0.65, alpha: 1.0)
+        
         print("bColor's rgb -> \(bColor.rgba)")
         print("bColor's hsb -> \(bColor.hsba)")
         print("bColor's hsl -> \(bColor.hsla)")
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         print("dColor' rgb -> \(dColor.rgba)")
         
         bSubView.backgroundColor = UIColor(hexCode: 0xFFD857).withAlphaComponent(0.5)
-        print(bColor.hexCode)
+        p
         
     }
 

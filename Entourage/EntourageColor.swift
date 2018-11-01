@@ -540,6 +540,34 @@ extension UIColor{
 }
 
 
+
+extension UIColor {
+    public func darken(by degree: CGFloat) -> UIColor {
+        let (hue,saturation,brightness,alpha) = self.hsba
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness - degree, alpha: alpha)
+    }
+    
+    public func lighten(by degree: CGFloat) -> UIColor {
+        let (hue,saturation,brightness,alpha) = self.hsba
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness + degree, alpha: alpha)
+    }
+    
+    public func saturate(by degree: CGFloat) -> UIColor {
+        let (hue,saturation,brightness,alpha) = self.hsba
+        return UIColor(hue: hue, saturation: saturation + degree, brightness: brightness, alpha: alpha)
+    }
+    
+    public func desaturate(by degree: CGFloat) -> UIColor {
+        let (hue,saturation,brightness,alpha) = self.hsba
+        return UIColor(hue: hue, saturation: saturation - degree, brightness: brightness, alpha: alpha)
+    }
+    
+    
+    
+    
+}
+
+
 extension UIColor{
     static public func ComplementaryColor(of color: UIColor) -> UIColor {
         
