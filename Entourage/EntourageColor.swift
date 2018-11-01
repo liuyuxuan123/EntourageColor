@@ -527,3 +527,37 @@ extension UIColor{
     }
 }
 
+
+
+extension UIColor{
+    static public func ComplementaryColor(of color: UIColor) -> UIColor {
+        return UIColor.red
+    }
+    
+    static public func ContrastColor(of color: UIColor) -> UIColor {
+        return UIColor.red
+    }
+    
+    static public func MonochromaticColor(of color: UIColor) -> UIColor {
+        return UIColor.red
+    }
+    
+    static public func AnalogousColors(of color: UIColor) -> [UIColor] {
+        return [.red]
+    }
+    
+    static public func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
+        return [.red]
+    }
+    
+    static public func TriadicColors(of color: UIColor) -> [UIColor] {
+        return [.red]
+    }
+    
+    static public func TetradicColors(of color: UIColor) -> [UIColor] {
+        return [.red]
+    }
+    
+    
+    
+}
