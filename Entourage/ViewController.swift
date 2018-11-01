@@ -17,9 +17,13 @@ class ViewController: UIViewController {
         aSubview.backgroundColor = UIColor.red
         self.view.addSubview(aSubview)
         
-        let bSubView = UIView(frame: CGRect(x: 100, y: 450, width: 300, height: 300))
-        bSubView.backgroundColor = UIColor.VitalRed
+        let bSubView = UIView(frame: CGRect(x: 0, y: 450, width: 100, height: 300))
+        let cSubView = UIView(frame: CGRect(x: 110, y: 450, width: 100, height: 300))
+        let dSubView = UIView(frame: CGRect(x: 220, y: 450, width: 100, height: 300))
+
         self.view.addSubview(bSubView)
+        self.view.addSubview(cSubView)
+        self.view.addSubview(dSubView)
 
         
         let bColor = UIColor(hue: 122 / 360.0, saturation: 0.30, lightness: 0.65, alpha: 1.0)
@@ -39,8 +43,21 @@ class ViewController: UIViewController {
         let dColor = UIColor(red: 25 / 255.0, green: 25 / 255.0 , blue: 25 / 255.0, alpha: 1.0)
         print("dColor' rgb -> \(dColor.rgba)")
         
-        bSubView.backgroundColor = UIColor(hexCode: 0xFFD857).withAlphaComponent(0.5)
-        p
+        bSubView.backgroundColor = UIColor(hexCode: 0xFFD857).grayscale()
+
+        
+        let eColor = UIColor.AnalogousColors(of: UIColor.RedWoodRed)
+        aSubview.backgroundColor = UIColor.RedWoodRed
+        bSubView.backgroundColor = eColor[0]
+        cSubView.backgroundColor = eColor[1]
+        dSubView.backgroundColor = eColor[2]
+        
+        eColor.forEach{ print($0.hsba)  }
+        
+        let aColor = UIColor(hue: 0.5, saturation: 0.5, brightness: 0.5, alpha: 1.0)
+        print("O -> \(aColor.hsba)")
+        let gColor = aColor.darken(by: 0.5)
+        print("A -> \(gColor.hsba)")
         
     }
 

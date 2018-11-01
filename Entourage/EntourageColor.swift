@@ -254,7 +254,7 @@ extension UIColor {
     static var Canghuang: UIColor           {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍黄色
     static var Beijingmaolab: UIColor       {    return #colorLiteral(red: 0.1529411765, green: 0.4039215686, blue: 0.5764705882, alpha: 1)    }  //  北京毛蓝色
     static var Canglv: UIColor              {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍绿色
-
+    
     // More Color
     // Color name translation
     
@@ -544,27 +544,30 @@ extension UIColor{
 extension UIColor {
     public func darken(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness - degree, alpha: alpha)
+        return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness - degree < 0 ? 0 : brightness - degree, alpha: alpha)
     }
     
     public func lighten(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness + degree, alpha: alpha)
+        return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness + degree > 1.0 ? 1.0 : brightness + degree, alpha: alpha)
     }
     
     public func saturate(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
-        return UIColor(hue: hue, saturation: saturation + degree, brightness: brightness, alpha: alpha)
+        return UIColor(hue: hue / 360.0, saturation: saturation + degree > 1.0 ? 1.0 : saturation + degree, brightness: brightness, alpha: alpha)
     }
     
     public func desaturate(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
-        return UIColor(hue: hue, saturation: saturation - degree, brightness: brightness, alpha: alpha)
+        return UIColor(hue: hue / 360.0, saturation: saturation - degree < 0.0 ? 0.0 : saturation - degree, brightness: brightness, alpha: alpha)
     }
     
-    
-    
-    
+    public func grayscale() -> UIColor {
+        var white : CGFloat = 0.0
+        var alpha : CGFloat = 0.0
+        self.getWhite(&white, alpha: &alpha)
+        return UIColor(white: white, alpha: alpha)
+    }
 }
 
 
@@ -576,64 +579,43 @@ extension UIColor{
         var brightness: CGFloat = 0
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        
-        if (alpha == 0) {
-            return UIColor.clear;
-        }
-        
         hue *= 360
-        saturation *= 100
-        brightness *= 100
-        
-        
-        hue += 180.0
-        if hue > 360.0 {
-            hue -= 360.0
+        if hue > 180.0 {
+            return UIColor(hue: hue / 180.0, saturation: saturation, brightness: brightness, alpha: alpha)
+        }else{
+            return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
         }
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
-    static public func ContrastColor(of color: UIColor) -> UIColor {
-        return UIColor.red
-    }
-    
-    static public func MonochromaticColor(of color: UIColor) -> UIColor {
-        return UIColor.red
+    static public func MonochromaticColors(of color: UIColor) -> [UIColor] {
+        let color = color.saturate(by: 1.0).lighten(by: 1.0)
+        return [color,
+                color.darken(by: 0.3).desaturate(by: 0.5),
+                color.darken(by: 0.6).desaturate(by: 0.2)]
+        
     }
     
     static public func AnalogousColors(of color: UIColor) -> [UIColor] {
-        return [.red]
+        let (hue,saturation,brightness,alpha) = color.hsba
+        return [UIColor(hue: (hue + 330).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 30).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
+        ]
     }
     
-    static public func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
-        return [.red]
-    }
-    
+   
     static public func TriadicColors(of color: UIColor) -> [UIColor] {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        
-        if (alpha == 0) {
-            return Array(repeating: UIColor.clear, count: 2)
-        }
-        
         hue *= 360
-        saturation *= 100
-        brightness *= 100
         
-        if hue > 240.0 {
-            return [UIColor(hue: hue - 240.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 120.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }else if hue > 120{
-            return [UIColor(hue: hue + 120.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 120.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }else{
-            return [UIColor(hue: hue + 120.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue + 240.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }
+        return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 120.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 240.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        
     }
     
     static public func TetradicColors(of color: UIColor) -> [UIColor] {
@@ -642,33 +624,12 @@ extension UIColor{
         var brightness: CGFloat = 0
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        
-        if (alpha == 0) {
-            return Array(repeating: UIColor.clear, count: 3)
-        }
-        
         hue *= 360
-        saturation *= 100
-        brightness *= 100
         
-        if hue > 270.0 {
-            return [UIColor(hue: hue - 270.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 90.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }else if hue > 180.0{
-            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 90.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }else if hue > 90.0{
-            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue + 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue - 180.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }else{
-            return [UIColor(hue: hue + 90.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue + 180.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                    UIColor(hue: hue + 270.0, saturation: saturation, brightness: brightness, alpha: alpha)]
-        }
+        return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 90.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 180.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 270.0).remainder(dividingBy: 360.0)  / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        
     }
-
-    
 }
