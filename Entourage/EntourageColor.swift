@@ -531,7 +531,27 @@ extension UIColor{
 
 extension UIColor{
     static public func ComplementaryColor(of color: UIColor) -> UIColor {
-        return UIColor.red
+        
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        
+        if (alpha == 0) {
+            return UIColor.clear;
+        }
+        
+        hue *= 360
+        saturation *= 100
+        brightness *= 100
+        
+        
+        hue += 180.0
+        if hue > 360.0 {
+            hue -= 360.0
+        }
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
     static public func ContrastColor(of color: UIColor) -> UIColor {
