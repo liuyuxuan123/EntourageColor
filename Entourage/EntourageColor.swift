@@ -607,3 +607,51 @@ extension UIColor{
                 UIColor(hue: (270.0 + degree) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
     }
 }
+
+
+extension UIColor {
+    static let randomVitalColor : [UIColor] = [
+        .VitalRed,.VitalOrange,.VitalYellow,.VitalGreen,.VitalTealBlue,.VitalBlue,.VitalPurple,.VitalPink
+    ]
+    
+    static let randomYellowColor : [UIColor] = [
+        .MellowYellow,.CyberYellow,.RoyalYellow,.BananaYello,.TuscanyYellow,.LemonYellow,.BumblebeeYellow,.CreamYellow,.PeachYellow,.LagunaYellow,.MustardYellow,.CornYellow,.PineappleYellow,.FlaxenYellow,.EggnogYellow,.TromboneYellow,.FlaxYellow,.EcruYellow,.SepiaYellow
+    ]
+    
+    static let randomOrangeColor : [UIColor] = [
+        .GoldOrange,.GoldenrodOrange,.PumpkinOrange,.FireOrange,.OchreOrange,.BurntOrange,.DijonOrange,.TangerineOrange,.TigerOrange,.HoneyOrange,.CarrotOrange,.AmberOrange,.ApricotOrange,.BronzeOrange,.CiderOrange,.ClayOrange,.RustOrange,.AmberOrange2,.SpiceOrange,
+    ]
+    
+    static let randomRedColor : [UIColor] = [
+        .SalmonRed,.ScarletRed,.BarnRed,.ImperialRed,.IndianRed,.ChiliRed,.FireBrickRed,.MaroonRed,.RedWoodRed,.RaspberryRed,.CandyAppleRed,.FerrariRed,.PersianRed,.USFlagRed,.CarmineRed,.BurgundyRed,.CrimsonRed,.SangriaRed,.MahoganyRed
+    ]
+    
+    static let randomPinkColor : [UIColor] = [
+        .RubyPink,.UltraPink,.ThulianPink,.MagentaPink,.RosePink,.LavenderPink,.CreamyPink,.FuchsiaPink,.FrenchRosePink,.CerisePink,.CarnationPink,.BrickPink,.AmaranthPink,.TaffyPink,.BubbleGumPink,.HotPink,.PunchPink,.LemonadePink,.FlamingoPink
+    ]
+    
+    static let randomVioletColor : [UIColor] = [
+        .HibiscusViolet,.MauveViolet,.MulberryViolet,.LavenderViolet,.OrchidViolet,.LilacViolet,.ElectricViolet,.AfricanViolet,.GrapeViolet,.AmethystViolet,.ByzantineViolet,.FandangoViolet,.HelioViolet,.FloralViolet,.ThistleViolet,.RoyalViolet,.LollipopViolet,.PlumViolet,.EggplantViolet
+    ]
+    
+    static let randomBlueColor : [UIColor] = [
+        .YaleBlue,.PigeonBlue,.SkyBlue,.IndependenceBlue,.AirForceBlue,.BabyBlue,.NavyBlue,.SteelBlue,.CarolinaBlue,.TurkishBlue,.MayaBlue,.CornflowerBlue,.OlympicBlue,.SapphireBlue,.AzureBlue,.EgyptianBlue,.DenimBlue,.PrussianBlue,.SpaceBlue,
+    ]
+    
+    static let randomGreenColor : [UIColor] = [
+        .ForestGreen,.SageGreen,.OliveGreen,.LimeGreen,.HunterGreen,.JadeGreen,.ArtichokeGreen,.FernGreen,.JungleGreen,.LaurelGreen,.MossGreen,.MintGreen,.PineGreen,.TeaGreen,.ArmyGreen,.EmeraldGreen,.KellyGreen,.SacramentoGreen,.SeaGreen,
+    ]
+    
+    static let randomBrownColor : [UIColor] = [
+        .CedarBrown,.CinnamonBrown,.BrunetteBrown,.MochaBrown,.UmberBrown,.TortillaBrown,.ChocolateBrown,.SyrupBrown,.GingerbreadBrown,.CaramelBrown,.WalnutBrown,.PecanBrown,.WoodBrown,.HickoryBrown,.EspressoBrown,.PeanutBrown,.TawnyBrown,.CoffeeBrown,.RussetBrown,
+    ]
+    
+    static let randomGrayColor : [UIColor] = [
+        .FossilGray,.MinkGray,.PearlGray,.AbaloneGray,.HarborGray,.SmokeGray,.ThunderGray,.PewterGray,.SteelGray,.StoneGray,.IronGray,.RhinoGray,.TroutGray,.SealGray,.LavaGray,.ShadowGray,.AshGray,.AnchorGray,.CharcoalGray,
+    ]
+    
+    static let randomChineseTraditionColor : [UIColor] = [
+        .Chengdehui,.Yuanqing,.Qianzonghui,.Ganshifen,.Zitenghui,.Dianlan,.Shenzhuyue,.Tianqing,.Biyushi,.Jianghuang,.Meiguihong,.Qianjiehuang,.Qiantengzi,.Qianxieya,.Baifanghuilan,.Kongquelan,.Dailan,.Huaqing,.Meiguihui,.Shenyan,.Xiangsihui,.Zhizong,.Qiantuose,.Zongcha,.Yadanqing,.Shiyangjin,.Tenghuang,.Xiuhong,.Baicaoshuang,.Baolan,.Canghuang,.Beijingmaolab,.Canglv,
+    ]
+    
+}
