@@ -556,7 +556,7 @@ extension UIColor{
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         hue *= 360
-        return UIColor(hue: (hue + 180.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
+        return UIColor(hue: (hue + 180.0).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
     static public func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
@@ -573,9 +573,9 @@ extension UIColor{
     
     static public func AnalogousColors(of color: UIColor) -> [UIColor] {
         let (hue,saturation,brightness,alpha) = color.hsba
-        return [UIColor(hue: (hue + 330).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+        return [UIColor(hue: (hue + 330).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 30).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
+                UIColor(hue: (hue + 30).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
         ]
     }
     
@@ -588,8 +588,8 @@ extension UIColor{
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         hue *= 360
         return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 120.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 240.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+                UIColor(hue: (hue + 120.0).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (hue + 240.0).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
         
     }
     
@@ -599,11 +599,11 @@ extension UIColor{
         var brightness: CGFloat = 0
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        hue *= 360
-        return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 90.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 180.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
-                UIColor(hue: (hue + 270.0).remainder(dividingBy: 360.0)  / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
+        let degree = abs(hue * 360.0 - 90.0).truncatingRemainder(dividingBy: 90.0)
         
+        return [UIColor(hue: (90.0 - degree) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (90.0 + degree) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (270.0 - degree) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
+                UIColor(hue: (270.0 + degree) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
     }
 }

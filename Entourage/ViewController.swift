@@ -52,15 +52,13 @@ class ViewController: UIViewController {
         cSubView.backgroundColor = UIColor.VitalPink
         dSubView.backgroundColor = UIColor.VitalGreen
         
-        eColor.forEach{ print($0.hsba)  }
-        
-        let aColor = UIColor(hue: 0.5, saturation: 0.5, brightness: 0.5, alpha: 1.0)
-        print("O -> \(aColor.hsba)")
-        let gColor = aColor.darken(by: 0.5)
-        print("A -> \(gColor.hsba)")
+        let fColor = UIColor.TetradicColors(of: UIColor(hue: 30.0 / 360.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)  )
+
         
     }
+}
 
-
+extension Double{
+    
 }
 
