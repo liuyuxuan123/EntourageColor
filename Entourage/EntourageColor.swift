@@ -457,12 +457,10 @@ extension UIColor{
     }
 }
 
-
-
-// RGBA Values Getter
-// If your UIColor object is generated from pattern
-// there will be no RGB value. And it's return value will be (0, 0, 0, 0.0)
 extension UIColor {
+    // RGBA Values Getter
+    // If your UIColor object is generated from pattern
+    // there will be no RGB value. And it's return value will be (0, 0, 0, 0.0)
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var red: CGFloat = 0
         var green: CGFloat = 0
@@ -471,13 +469,10 @@ extension UIColor {
         getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         return (red * 255, green * 255, blue * 255, alpha)
     }
-}
-
-
-// HSBA Values Getter
-// If your UIColor object is generated from pattern
-// there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
-extension UIColor {
+    
+    // HSBA Values Getter
+    // If your UIColor object is generated from pattern
+    // there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
     var hsba: (hue: CGFloat, Saturation: CGFloat, Brigtness: CGFloat, alpha: CGFloat) {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
@@ -486,22 +481,18 @@ extension UIColor {
         getHue(&hue, saturation: &saturation, brightness: &brigtness, alpha: &alpha)
         return (hue * 360, saturation, brigtness, alpha)
     }
-}
-
-// HSV Values Getter
-// HSV == HSB
-extension UIColor {
+    
+    // HSV Values Getter
+    // HSV == HSB
+    
     var hsva: (hue: CGFloat, Saturation: CGFloat, Value: CGFloat, alpha: CGFloat) {
         let (hue,saturation,value,alpha) = self.hsba
         return (hue,saturation,value,alpha)
     }
-}
-
-
-// HSLA Values Getter
-// If your UIColor object is generated from pattern
-// there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
-extension UIColor {
+    
+    // HSLA Values Getter
+    // If your UIColor object is generated from pattern
+    // there will be no HSB value. And it's return value will be (0, 0, 0, 0.0)
     var hsla: (hue: CGFloat, Saturation: CGFloat, Lightness: CGFloat, alpha: CGFloat) {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3117028E218F3D350034BBD1 /* Entourage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117028D218F3D350034BBD1 /* Entourage.png */; };
 		31D6A2E2218A11E800E92BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */; };
 		31D6A2E4218A11E800E92BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E3218A11E800E92BD8 /* ViewController.swift */; };
 		31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D6A2E5218A11E800E92BD8 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3117028C218F36360034BBD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3117028D218F3D350034BBD1 /* Entourage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entourage.png; sourceTree = "<group>"; };
 		31D6A2DE218A11E800E92BD8 /* Entourage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entourage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D6A2E3218A11E800E92BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
+				3117028C218F36360034BBD1 /* README.md */,
 				31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */,
 				31D6A2E3218A11E800E92BD8 /* ViewController.swift */,
 				31D6A2E5218A11E800E92BD8 /* Main.storyboard */,
 				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
 				31D6A2EA218A11EB00E92BD8 /* LaunchScreen.storyboard */,
 				31D6A2ED218A11EB00E92BD8 /* Info.plist */,
+				3117028D218F3D350034BBD1 /* Entourage.png */,
 			);
 			path = Entourage;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			files = (
 				31D6A2EC218A11EB00E92BD8 /* LaunchScreen.storyboard in Resources */,
 				31D6A2E9218A11EB00E92BD8 /* Assets.xcassets in Resources */,
+				3117028E218F3D350034BBD1 /* Entourage.png in Resources */,
 				31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
