@@ -1,8 +1,7 @@
 # Entourage Color
 > UIColor Extension 
 
-Predefined Color 
-UIColor static function 
+Predefined Color and UIColor static function 
 
 ![](Entourage/Entourage.png)
 

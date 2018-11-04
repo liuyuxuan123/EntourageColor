@@ -47,10 +47,10 @@ class ViewController: UIViewController {
 
         
         let eColor = UIColor.AnalogousColors(of: UIColor.RedWoodRed)
-        aSubview.backgroundColor = UIColor.RedWoodRed
-        bSubView.backgroundColor = eColor[0]
-        cSubView.backgroundColor = eColor[1]
-        dSubView.backgroundColor = eColor[2]
+        aSubview.backgroundColor = UIColor.VitalRed
+        bSubView.backgroundColor = UIColor.VitalBlue
+        cSubView.backgroundColor = UIColor.VitalPink
+        dSubView.backgroundColor = UIColor.VitalGreen
         
         eColor.forEach{ print($0.hsba)  }
         
