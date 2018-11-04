@@ -45,6 +45,7 @@
 			children = (
 				31D6A2E0218A11E800E92BD8 /* Entourage */,
 				31D6A2DF218A11E800E92BD8 /* Products */,
+				3117028C218F36360034BBD1 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
-				3117028C218F36360034BBD1 /* README.md */,
 				31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */,
 				31D6A2E3218A11E800E92BD8 /* ViewController.swift */,
 				31D6A2E5218A11E800E92BD8 /* Main.storyboard */,
