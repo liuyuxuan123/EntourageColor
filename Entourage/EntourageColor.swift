@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-
-
-
 extension UIColor {
     
     // MARK: Apple Suggested Colors
@@ -45,7 +42,6 @@ extension UIColor {
     class var EcruYellow: UIColor          {    return #colorLiteral(red: 0.8078431373, green: 0.6941176471, blue: 0.5019607843, alpha: 1)    }
     class var SepiaYellow: UIColor         {    return #colorLiteral(red: 0.8901960784, green: 0.7176470588, blue: 0.4705882353, alpha: 1)    }
     
-    
     // MARK: Orange Colors
     class var GoldOrange: UIColor          {    return #colorLiteral(red: 0.9764705882, green: 0.6509803922, blue: 0.007843137255, alpha: 1)    }
     class var GoldenrodOrange: UIColor     {    return #colorLiteral(red: 0.8588235294, green: 0.6470588235, blue: 0.1254901961, alpha: 1)    }
@@ -67,7 +63,6 @@ extension UIColor {
     class var AmberOrange2: UIColor        {    return #colorLiteral(red: 0.5333333333, green: 0.1882352941, blue: 0, alpha: 1)    }
     class var SpiceOrange: UIColor         {    return #colorLiteral(red: 0.4745098039, green: 0.2196078431, blue: 0.007843137255, alpha: 1)    }
     
-    
     // MARK: Red Colors
     class  var SalmonRed: UIColor           {    return #colorLiteral(red: 1, green: 0.5059199929, blue: 0.4467020631, alpha: 1)    }
     class  var ScarletRed: UIColor          {    return #colorLiteral(red: 1, green: 0.1411764706, blue: 0, alpha: 1)    }
@@ -88,7 +83,6 @@ extension UIColor {
     class  var CrimsonRed: UIColor          {    return #colorLiteral(red: 0.7215686275, green: 0.05882352941, blue: 0.03921568627, alpha: 1)    }
     class  var SangriaRed: UIColor          {    return #colorLiteral(red: 0.368627451, green: 0.09803921569, blue: 0.07843137255, alpha: 1)    }
     class  var MahoganyRed: UIColor         {    return #colorLiteral(red: 0.2588235294, green: 0.05098039216, blue: 0.03529411765, alpha: 1)    }
-    
     
     // MARK: Pink Colors
     class  var RubyPink: UIColor            {    return #colorLiteral(red: 0.8784313725, green: 0.06666666667, blue: 0.3725490196, alpha: 1)    }
@@ -131,7 +125,6 @@ extension UIColor {
     class  var LollipopViolet: UIColor      {    return #colorLiteral(red: 0.5058823529, green: 0, blue: 0.4980392157, alpha: 1)    }
     class  var PlumViolet: UIColor          {    return #colorLiteral(red: 0.5529411765, green: 0.2705882353, blue: 0.5215686275, alpha: 1)    }
     class  var EggplantViolet: UIColor      {    return #colorLiteral(red: 0.1921568627, green: 0.07843137255, blue: 0.1960784314, alpha: 1)    }
-    
     
     // MARK: Blue Colors
     class  var YaleBlue: UIColor            {    return #colorLiteral(red: 0.05490196078, green: 0.2980392157, blue: 0.5725490196, alpha: 1)    }
@@ -196,7 +189,6 @@ extension UIColor {
     class  var CoffeeBrown: UIColor         {    return #colorLiteral(red: 0.2941176471, green: 0.2117647059, blue: 0.09803921569, alpha: 1)    }
     class  var RussetBrown: UIColor         {    return #colorLiteral(red: 0.4980392157, green: 0.2745098039, blue: 0.1058823529, alpha: 1)    }
     
-    
     // MARK: Gray Colors
     class  var FossilGray: UIColor          {    return #colorLiteral(red: 0.4705882353, green: 0.4470588235, blue: 0.462745098, alpha: 1)    }
     class  var MinkGray: UIColor            {    return #colorLiteral(red: 0.5333333333, green: 0.5019607843, blue: 0.4823529412, alpha: 1)    }
@@ -218,9 +210,7 @@ extension UIColor {
     class  var AnchorGray: UIColor          {    return #colorLiteral(red: 0.2431372549, green: 0.2588235294, blue: 0.2941176471, alpha: 1)    }
     class  var CharcoalGray: UIColor        {    return #colorLiteral(red: 0.1333333333, green: 0.1254901961, blue: 0.1294117647, alpha: 1)    }
     
-    
     // MARK: Chinese Tradition Colors
-    
     class  var Chengdehui: UIColor          {    return #colorLiteral(red: 0.4588235294, green: 0.4588235294, blue: 0.4392156863, alpha: 1)    }  //  承德灰
     class  var Yuanqing: UIColor            {    return #colorLiteral(red: 0.2431372549, green: 0.2352941176, blue: 0.2392156863, alpha: 1)    }  //  元青
     class  var Qianzonghui: UIColor         {    return #colorLiteral(red: 0.8823529412, green: 0.8588235294, blue: 0.8039215686, alpha: 1)    }  //  浅棕灰
@@ -257,9 +247,7 @@ extension UIColor {
     
     // More Color
     // Color name translation
-    
 }
-
 
 extension UIColor {
     // MARK: HTML Color
@@ -404,7 +392,6 @@ extension UIColor {
 // Gradient Color
 //
 extension UIColor{
-    
     //  Gradient Types
     enum UIGradientStyle {
         case LeftToRight
@@ -484,7 +471,6 @@ extension UIColor {
     
     // HSV Values Getter
     // HSV == HSB
-    
     var hsva: (hue: CGFloat, Saturation: CGFloat, Value: CGFloat, alpha: CGFloat) {
         let (hue,saturation,value,alpha) = self.hsba
         return (hue,saturation,value,alpha)
@@ -564,18 +550,18 @@ extension UIColor {
 
 extension UIColor{
     static public func ComplementaryColor(of color: UIColor) -> UIColor {
-        
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         hue *= 360
-        if hue > 180.0 {
-            return UIColor(hue: hue / 180.0, saturation: saturation, brightness: brightness, alpha: alpha)
-        }else{
-            return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
-        }
+        return UIColor(hue: (hue + 180.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
+    }
+    
+    static public func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
+        let complementaryColor = UIColor.ComplementaryColor(of: color)
+        return UIColor.AnalogousColors(of: complementaryColor)
     }
     
     static public func MonochromaticColors(of color: UIColor) -> [UIColor] {
@@ -583,7 +569,6 @@ extension UIColor{
         return [color,
                 color.darken(by: 0.3).desaturate(by: 0.5),
                 color.darken(by: 0.6).desaturate(by: 0.2)]
-        
     }
     
     static public func AnalogousColors(of color: UIColor) -> [UIColor] {
@@ -602,7 +587,6 @@ extension UIColor{
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         hue *= 360
-        
         return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: (hue + 120.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: (hue + 240.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)]
@@ -616,7 +600,6 @@ extension UIColor{
         var alpha: CGFloat = 0
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         hue *= 360
-        
         return [UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: (hue + 90.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: (hue + 180.0).remainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
