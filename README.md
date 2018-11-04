@@ -1,7 +1,8 @@
 # Entourage Color
-> Short blurb about what your product does.
+> UIColor Extension 
 
-One to two paragraph statement about your product and what it does.
+Predefined Color 
+UIColor static function 
 
 ![](Entourage/Entourage.png)
 
