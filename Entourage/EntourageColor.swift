@@ -517,29 +517,28 @@ extension UIColor{
 }
 
 
-
 extension UIColor {
-    public func darken(by degree: CGFloat) -> UIColor {
+    func darken(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
         return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness - degree < 0 ? 0 : brightness - degree, alpha: alpha)
     }
     
-    public func lighten(by degree: CGFloat) -> UIColor {
+    func lighten(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
         return UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness + degree > 1.0 ? 1.0 : brightness + degree, alpha: alpha)
     }
     
-    public func saturate(by degree: CGFloat) -> UIColor {
+    func saturate(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
         return UIColor(hue: hue / 360.0, saturation: saturation + degree > 1.0 ? 1.0 : saturation + degree, brightness: brightness, alpha: alpha)
     }
     
-    public func desaturate(by degree: CGFloat) -> UIColor {
+    func desaturate(by degree: CGFloat) -> UIColor {
         let (hue,saturation,brightness,alpha) = self.hsba
         return UIColor(hue: hue / 360.0, saturation: saturation - degree < 0.0 ? 0.0 : saturation - degree, brightness: brightness, alpha: alpha)
     }
     
-    public func grayscale() -> UIColor {
+    func grayscale() -> UIColor {
         var white : CGFloat = 0.0
         var alpha : CGFloat = 0.0
         self.getWhite(&white, alpha: &alpha)
@@ -549,7 +548,7 @@ extension UIColor {
 
 
 extension UIColor{
-    static public func ComplementaryColor(of color: UIColor) -> UIColor {
+    static func ComplementaryColor(of color: UIColor) -> UIColor {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
@@ -559,19 +558,19 @@ extension UIColor{
         return UIColor(hue: (hue + 180.0).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
-    static public func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
+    static func SplitComplementaryColors(of color: UIColor) -> [UIColor] {
         let complementaryColor = UIColor.ComplementaryColor(of: color)
         return UIColor.AnalogousColors(of: complementaryColor)
     }
     
-    static public func MonochromaticColors(of color: UIColor) -> [UIColor] {
+    static func MonochromaticColors(of color: UIColor) -> [UIColor] {
         let color = color.saturate(by: 1.0).lighten(by: 1.0)
         return [color,
                 color.darken(by: 0.3).desaturate(by: 0.5),
                 color.darken(by: 0.6).desaturate(by: 0.2)]
     }
     
-    static public func AnalogousColors(of color: UIColor) -> [UIColor] {
+    static func AnalogousColors(of color: UIColor) -> [UIColor] {
         let (hue,saturation,brightness,alpha) = color.hsba
         return [UIColor(hue: (hue + 330).truncatingRemainder(dividingBy: 360.0) / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
                 UIColor(hue: hue / 360.0, saturation: saturation, brightness: brightness, alpha: alpha),
@@ -579,8 +578,7 @@ extension UIColor{
         ]
     }
     
-   
-    static public func TriadicColors(of color: UIColor) -> [UIColor] {
+    static func TriadicColors(of color: UIColor) -> [UIColor] {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
@@ -593,7 +591,7 @@ extension UIColor{
         
     }
     
-    static public func TetradicColors(of color: UIColor) -> [UIColor] {
+    static func TetradicColors(of color: UIColor) -> [UIColor] {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
@@ -608,8 +606,7 @@ extension UIColor{
     }
 }
 
-
-extension UIColor {
+private extension UIColor {
     static let randomVitalColors : [UIColor] = [
         .VitalRed,.VitalOrange,.VitalYellow,.VitalGreen,.VitalTealBlue,.VitalBlue,.VitalPurple,.VitalPink
     ]
