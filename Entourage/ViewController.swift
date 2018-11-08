@@ -44,16 +44,13 @@ class ViewController: UIViewController {
         print("dColor' rgb -> \(dColor.rgba)")
         
         bSubView.backgroundColor = UIColor(hexCode: 0xFFD857).grayscale()
-
-        
-        let eColor = UIColor.AnalogousColors(of: UIColor.RedWoodRed)
         aSubview.backgroundColor = UIColor.VitalRed
         bSubView.backgroundColor = UIColor.VitalBlue
         cSubView.backgroundColor = UIColor.VitalPink
         dSubView.backgroundColor = UIColor.VitalGreen
         
-        let fColor = UIColor.TetradicColors(of: UIColor(hue: 30.0 / 360.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)  )
-
+        let color = UIColor.randomChineseTraditionColor()
+        dSubView.backgroundColor = color
         
     }
 }

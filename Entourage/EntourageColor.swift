@@ -677,16 +677,38 @@ private extension UIColor {
 }
 
 extension UIColor {
-    static func randomVitalColor() -> UIColor { return randomColor(in: UIColor.randomVitalColors, withKey: "previousRandomVitalColors") }
-    static func randomYellowColor() -> UIColor { return randomColor(in: UIColor.randomYellowColors, withKey: "previousRandomYellowColors") }
-    static func randomOrangeColor() -> UIColor { return randomColor(in: UIColor.randomOrangeColors, withKey: "previousRandomOrangeColors") }
-    static func randomRedColor() -> UIColor { return randomColor(in: UIColor.randomRedColors, withKey: "previousRandomRedColors") }
-    static func randomPinkColor() -> UIColor { return randomColor(in: UIColor.randomPinkColors, withKey: "previousRandomPinkColors") }
-    static func randomVioletColor() -> UIColor { return randomColor(in: UIColor.randomVioletColors, withKey: "previousRandomVioletColors") }
-    static func randomBlueColor() -> UIColor { return randomColor(in: UIColor.randomBlueColors, withKey: "previousRandomBlueColors") }
-    static func randomGreenColor() -> UIColor { return randomColor(in: UIColor.randomGreenColors, withKey: "previousRandomGreenColors") }
-    static func randomBrownColor() -> UIColor { return randomColor(in: UIColor.randomBrownColors, withKey: "previousRandomBrownColors") }
-    static func randomGrayColor() -> UIColor { return randomColor(in: UIColor.randomVitalColors, withKey: "previousRandomGrayColors") }
-    static func randomChineseTraditionColor() -> UIColor { return randomColor(in: UIColor.randomChineseTraditionColors, withKey: "previousRandomChineseTraditionColors") }
+    static func randomVitalColor() -> UIColor {
+        return randomColor(in: UIColor.randomVitalColors, withKey: "previousRandomVitalColors")
+    }
+    static func randomYellowColor() -> UIColor {
+        return randomColor(in: UIColor.randomYellowColors, withKey: "previousRandomYellowColors")
+    }
+    static func randomOrangeColor() -> UIColor {
+        return randomColor(in: UIColor.randomOrangeColors, withKey: "previousRandomOrangeColors")
+    }
+    static func randomRedColor() -> UIColor {
+        return randomColor(in: UIColor.randomRedColors, withKey: "previousRandomRedColors")
+    }
+    static func randomPinkColor() -> UIColor {
+        return randomColor(in: UIColor.randomPinkColors, withKey: "previousRandomPinkColors")
+    }
+    static func randomVioletColor() -> UIColor {
+        return randomColor(in: UIColor.randomVioletColors, withKey: "previousRandomVioletColors")
+    }
+    static func randomBlueColor() -> UIColor {
+        return randomColor(in: UIColor.randomBlueColors, withKey: "previousRandomBlueColors")
+    }
+    static func randomGreenColor() -> UIColor {
+        return randomColor(in: UIColor.randomGreenColors, withKey: "previousRandomGreenColors")
+    }
+    static func randomBrownColor() -> UIColor {
+        return randomColor(in: UIColor.randomBrownColors, withKey: "previousRandomBrownColors")
+    }
+    static func randomGrayColor() -> UIColor {
+        return randomColor(in: UIColor.randomVitalColors, withKey: "previousRandomGrayColors")
+    }
+    static func randomChineseTraditionColor() -> UIColor {
+        return randomColor(in: UIColor.randomChineseTraditionColors, withKey: "previousRandomChineseTraditionColors")
+    }
     
 }
