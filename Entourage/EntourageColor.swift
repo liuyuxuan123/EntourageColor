@@ -719,6 +719,8 @@ extension UIColor{
     // Add Mozaic Color
     // Add Mozaic Color from an UIImage
     // Add Custom Gradient Color
+ 
     // Gradient Color animation
+    // Gradient Color more customization
     
 }
