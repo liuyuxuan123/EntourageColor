@@ -712,3 +712,9 @@ extension UIColor {
     }
     
 }
+
+
+
+extension UIColor{
+    // Add Mozaic Color 
+}
