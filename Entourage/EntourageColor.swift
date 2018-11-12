@@ -343,50 +343,50 @@ extension UIColor {
     class  var Violet: UIColor              {    return #colorLiteral(red: 0.9333333333, green: 0.5098039216, blue: 0.9333333333, alpha: 1)    }
     class  var PaleGoldenRod: UIColor       {    return #colorLiteral(red: 0.9333333333, green: 0.9098039216, blue: 0.6666666667, alpha: 1)    }
     class  var LightCoral: UIColor          {    return #colorLiteral(red: 0.9411764706, green: 0.5019607843, blue: 0.5019607843, alpha: 1)    }
-    static var Khaki: UIColor               {    return #colorLiteral(red: 0.9411764706, green: 0.9019607843, blue: 0.5490196078, alpha: 1)    }
-    static var AliceBlue: UIColor           {    return #colorLiteral(red: 0.9411764706, green: 0.9725490196, blue: 1, alpha: 1)    }
-    static var HoneyDew: UIColor            {    return #colorLiteral(red: 0.9411764706, green: 1, blue: 0.9411764706, alpha: 1)    }
-    static var Azure: UIColor               {    return #colorLiteral(red: 0.9411764706, green: 1, blue: 1, alpha: 1)    }
-    static var SandyBrown: UIColor          {    return #colorLiteral(red: 0.9568627451, green: 0.6431372549, blue: 0.3764705882, alpha: 1)    }
-    static var Wheat: UIColor               {    return #colorLiteral(red: 0.9607843137, green: 0.8705882353, blue: 0.7019607843, alpha: 1)    }
-    static var Beige: UIColor               {    return #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.862745098, alpha: 1)    }
-    static var WhiteSmoke: UIColor          {    return #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)    }
-    static var MintCream : UIColor          {    return #colorLiteral(red: 0.9607843137, green: 1, blue: 0.9803921569, alpha: 1)    }
-    static var GhostWhite : UIColor         {    return #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 1, alpha: 1)    }
-    static var Salmon: UIColor              {    return #colorLiteral(red: 0.9803921569, green: 0.5019607843, blue: 0.4470588235, alpha: 1)    }
-    static var AntiqueWhite: UIColor        {    return #colorLiteral(red: 0.9803921569, green: 0.9215686275, blue: 0.8431372549, alpha: 1)    }
-    static var Linen: UIColor               {    return #colorLiteral(red: 0.9803921569, green: 0.9411764706, blue: 0.9019607843, alpha: 1)    }
-    static var LightGoldenRodYellow: UIColor{    return #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.8235294118, alpha: 1)    }
-    static var OldLace: UIColor             {    return #colorLiteral(red: 0.9921568627, green: 0.9607843137, blue: 0.9019607843, alpha: 1)    }
-    static var Red: UIColor                 {    return #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)    }
-    static var Fuchsia: UIColor             {    return #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1)    }
-    static var Magenta: UIColor             {    return #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1)    }
-    static var DeepPink: UIColor            {    return #colorLiteral(red: 1, green: 0.07843137255, blue: 0.5764705882, alpha: 1)    }
-    static var OrangeRed: UIColor           {    return #colorLiteral(red: 1, green: 0.2705882353, blue: 0, alpha: 1)    }
-    static var Tomato: UIColor              {    return #colorLiteral(red: 1, green: 0.3882352941, blue: 0.2784313725, alpha: 1)    }
-    static var Coral: UIColor               {    return #colorLiteral(red: 1, green: 0.4980392157, blue: 0.3137254902, alpha: 1)    }
-    static var DarkOrange: UIColor          {    return #colorLiteral(red: 1, green: 0.5490196078, blue: 0, alpha: 1)    }
-    static var LightSalmon: UIColor         {    return #colorLiteral(red: 1, green: 0.6274509804, blue: 0.4784313725, alpha: 1)    }
-    static var Orange: UIColor              {    return #colorLiteral(red: 1, green: 0.6470588235, blue: 0, alpha: 1)    }
-    static var LightPink: UIColor           {    return #colorLiteral(red: 1, green: 0.7137254902, blue: 0.7568627451, alpha: 1)    }
-    static var Pink: UIColor                {    return #colorLiteral(red: 1, green: 0.7529411765, blue: 0.7960784314, alpha: 1)    }
-    static var Gold: UIColor                {    return #colorLiteral(red: 1, green: 0.8431372549, blue: 0, alpha: 1)    }
-    static var PeachPuff : UIColor          {    return #colorLiteral(red: 1, green: 0.8549019608, blue: 0.7254901961, alpha: 1)    }
-    static var NavajoWhite: UIColor         {    return #colorLiteral(red: 1, green: 0.8705882353, blue: 0.6784313725, alpha: 1)    }
-    static var Moccasin: UIColor            {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.7098039216, alpha: 1)    }
-    static var Bisque: UIColor              {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.768627451, alpha: 1)    }
-    static var MistyRose: UIColor           {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.8823529412, alpha: 1)    }
-    static var BlanchedAlmond: UIColor      {    return #colorLiteral(red: 1, green: 0.9215686275, blue: 0.8039215686, alpha: 1)    }
-    static var PapayaWhip: UIColor          {    return #colorLiteral(red: 1, green: 0.937254902, blue: 0.8352941176, alpha: 1)    }
-    static var LavenderBlush: UIColor       {    return #colorLiteral(red: 1, green: 0.9411764706, blue: 0.9607843137, alpha: 1)    }
-    static var SeaShell: UIColor            {    return #colorLiteral(red: 1, green: 0.9607843137, blue: 0.9333333333, alpha: 1)    }
-    static var Cornsilk: UIColor            {    return #colorLiteral(red: 1, green: 0.9725490196, blue: 0.862745098, alpha: 1)    }
-    static var LemonChiffon: UIColor        {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.8039215686, alpha: 1)    }
-    static var FloralWhite: UIColor         {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.9411764706, alpha: 1)    }
-    static var Snow: UIColor                {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.9803921569, alpha: 1)    }
-    static var Yellow: UIColor              {    return #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1)    }
-    static var LightYellow: UIColor         {    return #colorLiteral(red: 1, green: 1, blue: 0.8784313725, alpha: 1)    }
-    static var Ivory: UIColor               {    return #colorLiteral(red: 1, green: 1, blue: 0.9411764706, alpha: 1)    }
+    class var Khaki: UIColor                {    return #colorLiteral(red: 0.9411764706, green: 0.9019607843, blue: 0.5490196078, alpha: 1)    }
+    class var AliceBlue: UIColor            {    return #colorLiteral(red: 0.9411764706, green: 0.9725490196, blue: 1, alpha: 1)    }
+    class var HoneyDew: UIColor             {    return #colorLiteral(red: 0.9411764706, green: 1, blue: 0.9411764706, alpha: 1)    }
+    class var Azure: UIColor                {    return #colorLiteral(red: 0.9411764706, green: 1, blue: 1, alpha: 1)    }
+    class var SandyBrown: UIColor           {    return #colorLiteral(red: 0.9568627451, green: 0.6431372549, blue: 0.3764705882, alpha: 1)    }
+    class var Wheat: UIColor                {    return #colorLiteral(red: 0.9607843137, green: 0.8705882353, blue: 0.7019607843, alpha: 1)    }
+    class var Beige: UIColor                {    return #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.862745098, alpha: 1)    }
+    class var WhiteSmoke: UIColor           {    return #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)    }
+    class var MintCream : UIColor           {    return #colorLiteral(red: 0.9607843137, green: 1, blue: 0.9803921569, alpha: 1)    }
+    class var GhostWhite : UIColor          {    return #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 1, alpha: 1)    }
+    class var Salmon: UIColor               {    return #colorLiteral(red: 0.9803921569, green: 0.5019607843, blue: 0.4470588235, alpha: 1)    }
+    class var AntiqueWhite: UIColor         {    return #colorLiteral(red: 0.9803921569, green: 0.9215686275, blue: 0.8431372549, alpha: 1)    }
+    class var Linen: UIColor                {    return #colorLiteral(red: 0.9803921569, green: 0.9411764706, blue: 0.9019607843, alpha: 1)    }
+    class var LightGoldenRodYellow: UIColor {    return #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.8235294118, alpha: 1)    }
+    class var OldLace: UIColor              {    return #colorLiteral(red: 0.9921568627, green: 0.9607843137, blue: 0.9019607843, alpha: 1)    }
+    class var Red: UIColor                  {    return #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)    }
+    class var Fuchsia: UIColor              {    return #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1)    }
+    class var Magenta: UIColor              {    return #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1)    }
+    class var DeepPink: UIColor             {    return #colorLiteral(red: 1, green: 0.07843137255, blue: 0.5764705882, alpha: 1)    }
+    class var OrangeRed: UIColor            {    return #colorLiteral(red: 1, green: 0.2705882353, blue: 0, alpha: 1)    }
+    class var Tomato: UIColor               {    return #colorLiteral(red: 1, green: 0.3882352941, blue: 0.2784313725, alpha: 1)    }
+    class var Coral: UIColor                {    return #colorLiteral(red: 1, green: 0.4980392157, blue: 0.3137254902, alpha: 1)    }
+    class var DarkOrange: UIColor           {    return #colorLiteral(red: 1, green: 0.5490196078, blue: 0, alpha: 1)    }
+    class var LightSalmon: UIColor          {    return #colorLiteral(red: 1, green: 0.6274509804, blue: 0.4784313725, alpha: 1)    }
+    class var Orange: UIColor               {    return #colorLiteral(red: 1, green: 0.6470588235, blue: 0, alpha: 1)    }
+    class var LightPink: UIColor            {    return #colorLiteral(red: 1, green: 0.7137254902, blue: 0.7568627451, alpha: 1)    }
+    class var Pink: UIColor                 {    return #colorLiteral(red: 1, green: 0.7529411765, blue: 0.7960784314, alpha: 1)    }
+    class var Gold: UIColor                 {    return #colorLiteral(red: 1, green: 0.8431372549, blue: 0, alpha: 1)    }
+    class var PeachPuff : UIColor           {    return #colorLiteral(red: 1, green: 0.8549019608, blue: 0.7254901961, alpha: 1)    }
+    class var NavajoWhite: UIColor          {    return #colorLiteral(red: 1, green: 0.8705882353, blue: 0.6784313725, alpha: 1)    }
+    class var Moccasin: UIColor             {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.7098039216, alpha: 1)    }
+    class var Bisque: UIColor               {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.768627451, alpha: 1)    }
+    class var MistyRose: UIColor            {    return #colorLiteral(red: 1, green: 0.8941176471, blue: 0.8823529412, alpha: 1)    }
+    class var BlanchedAlmond: UIColor       {    return #colorLiteral(red: 1, green: 0.9215686275, blue: 0.8039215686, alpha: 1)    }
+    class var PapayaWhip: UIColor           {    return #colorLiteral(red: 1, green: 0.937254902, blue: 0.8352941176, alpha: 1)    }
+    class var LavenderBlush: UIColor        {    return #colorLiteral(red: 1, green: 0.9411764706, blue: 0.9607843137, alpha: 1)    }
+    class var SeaShell: UIColor             {    return #colorLiteral(red: 1, green: 0.9607843137, blue: 0.9333333333, alpha: 1)    }
+    class var Cornsilk: UIColor             {    return #colorLiteral(red: 1, green: 0.9725490196, blue: 0.862745098, alpha: 1)    }
+    class var LemonChiffon: UIColor         {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.8039215686, alpha: 1)    }
+    class var FloralWhite: UIColor          {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.9411764706, alpha: 1)    }
+    class var Snow: UIColor                 {    return #colorLiteral(red: 1, green: 0.9803921569, blue: 0.9803921569, alpha: 1)    }
+    class var Yellow: UIColor               {    return #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1)    }
+    class var LightYellow: UIColor          {    return #colorLiteral(red: 1, green: 1, blue: 0.8784313725, alpha: 1)    }
+    class var Ivory: UIColor                {    return #colorLiteral(red: 1, green: 1, blue: 0.9411764706, alpha: 1)    }
 }
 
 // Gradient Color
@@ -745,4 +745,7 @@ extension UIColor {
 
 extension UIColor {
     // Generate Color by Picture
+
+    class var Bulbasaur:[UIColor]           {    return [#colorLiteral(red: 0.3843137255, green: 0.8352941176, blue: 0.7058823529, alpha: 1),#colorLiteral(red: 0.5137254902, green: 0.9333333333, blue: 0.7725490196, alpha: 1),#colorLiteral(red: 0.09411764706, green: 0.2901960784, blue: 0.2901960784, alpha: 1),#colorLiteral(red: 0.4509803922, green: 0.6745098039, blue: 0.1921568627, alpha: 1)]    }
+    class var Ivysaur:[UIColor]             {    return [#colorLiteral(red: 0.3843137255, green: 0.8352941176, blue: 0.7058823529, alpha: 1),#colorLiteral(red: 0.5137254902, green: 0.9333333333, blue: 0.7725490196, alpha: 1),#colorLiteral(red: 0.09411764706, green: 0.2901960784, blue: 0.2901960784, alpha: 1),#colorLiteral(red: 0.4509803922, green: 0.6745098039, blue: 0.1921568627, alpha: 1)]    }
 }
