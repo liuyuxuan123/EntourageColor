@@ -726,4 +726,9 @@ extension UIColor{
     // More CALayer
     // More README.md
     
+    // All UIView subclasses have a layer property, which is responsible for drawing their contents efficiently. These layers are powered by Core Animation, which handles all the drawing and animation that UIKit requests. The layer is separate from the view because drawing is separate from placement – you can move a UIView around freely, change its alpha, add or remove it all you want, and so on, but that doesn’t affect the underlying way it’s drawn.
+    
+    // Although most views use a plain CALayer behind them, there are specialized subclasses that do more advanced things. CATiledLayer is responsible for tiling images in the way you see in the Maps app, CAEmitterLayer handles creating particles, CAGradientLayer draws color gradients, and more – there’s a selection depending on your need.
+    
+    // Broadly speaking, iOS developers mostly work with CALayer through the layer property of their views – things like rounding corners, adding borders, and drawing shadows can all be done there.
 }
