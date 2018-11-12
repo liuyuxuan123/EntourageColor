@@ -15,7 +15,8 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 Just put _EntourageColor.swift_ into your project. 
 
 ## Release History
-
+* 0.0.3
+* Add more function
 * 0.0.2
 * Add README file
 * 0.0.1
@@ -40,5 +41,4 @@ Yuxuan Liu  – [@liuyuxuan1996](https://twitter.com/dbader_org) – freemanxliu
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
-#  <#Title#>
 
