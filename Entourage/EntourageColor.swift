@@ -742,3 +742,7 @@ extension UIColor {
     // Add Pokemon Color
     // Pokemon Go feature
 }
+
+extension UIColor {
+    // Generate Color by Picture
+}
