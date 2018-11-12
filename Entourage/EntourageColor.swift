@@ -723,6 +723,9 @@ extension UIColor{
     // Gradient Color animation
     // Gradient Color more customization
     
+}
+
+extension UIColor {
     // More CALayer
     // More README.md
     
@@ -731,4 +734,11 @@ extension UIColor{
     // Although most views use a plain CALayer behind them, there are specialized subclasses that do more advanced things. CATiledLayer is responsible for tiling images in the way you see in the Maps app, CAEmitterLayer handles creating particles, CAGradientLayer draws color gradients, and more – there’s a selection depending on your need.
     
     // Broadly speaking, iOS developers mostly work with CALayer through the layer property of their views – things like rounding corners, adding borders, and drawing shadows can all be done there.
+
+}
+
+
+extension UIColor {
+    // Add Pokemon Color
+    // Pokemon Go feature
 }
