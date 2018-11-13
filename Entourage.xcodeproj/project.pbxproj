@@ -67,8 +67,8 @@
 				31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */,
 				31D6A2E3218A11E800E92BD8 /* ViewController.swift */,
 				31D6A2E5218A11E800E92BD8 /* Main.storyboard */,
-				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
 				31D6A2EA218A11EB00E92BD8 /* LaunchScreen.storyboard */,
+				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
 				31D6A2ED218A11EB00E92BD8 /* Info.plist */,
 				3117028D218F3D350034BBD1 /* Entourage.png */,
 			);
