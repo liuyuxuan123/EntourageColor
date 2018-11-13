@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3117028E218F3D350034BBD1 /* Entourage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117028D218F3D350034BBD1 /* Entourage.png */; };
+		311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CE4CC219AA6880019731B /* PokemonColor.swift */; };
 		31D6A2E2218A11E800E92BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */; };
 		31D6A2E4218A11E800E92BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E3218A11E800E92BD8 /* ViewController.swift */; };
 		31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D6A2E5218A11E800E92BD8 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		3117028C218F36360034BBD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3117028D218F3D350034BBD1 /* Entourage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entourage.png; sourceTree = "<group>"; };
+		311CE4CC219AA6880019731B /* PokemonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonColor.swift; sourceTree = "<group>"; };
 		31D6A2DE218A11E800E92BD8 /* Entourage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entourage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D6A2E3218A11E800E92BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
+				311CE4CC219AA6880019731B /* PokemonColor.swift */,
 				31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */,
 				31D6A2E3218A11E800E92BD8 /* ViewController.swift */,
 				31D6A2E5218A11E800E92BD8 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D6A2F4218A121900E92BD8 /* EntourageColor.swift in Sources */,
+				311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */,
 				31D6A2E4218A11E800E92BD8 /* ViewController.swift in Sources */,
 				31D6A2E2218A11E800E92BD8 /* AppDelegate.swift in Sources */,
 			);
