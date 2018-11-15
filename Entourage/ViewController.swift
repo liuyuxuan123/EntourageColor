@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let aSubview = UIView(frame: CGRect(x: 50, y: 150, width: 500, height: 500))
         self.view.addSubview(aSubview)
        
-        aSubview.backgroundColor = UIColor(withPattern: .Triangle, withDensity: .Tight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
+        aSubview.backgroundColor = UIColor(withPattern: .Ring, withDensity: .Tight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
         
         
         let bSubview = UIView(frame: CGRect(x: 50, y: 700, width: 50, height: 50))

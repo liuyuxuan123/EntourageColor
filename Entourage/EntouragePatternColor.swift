@@ -104,20 +104,12 @@ extension UIColor {
                                                   y: CGFloat(j) * heightOfGrid,
                                                   width: widthOfGrid,
                                                   height: heightOfGrid)
-                    let currentGridCenter = CGPoint(x: widthOfGrid / 2,
-                                                    y: heightOfGrid / 2)
                     let randomXRange = segmentLength/2..<currentGridFrame.size.width-segmentLength/2
                     let randomYRange = segmentLength/2..<currentGridFrame.size.height-segmentLength/2
                     let randX = CGFloat.random(in: randomXRange)
                     let randY = CGFloat.random(in: randomYRange)
                     
                     let singleTriangleLayer = CAShapeLayer()
-                    
-                    //                    let singleDotPath = UIBezierPath(arcCenter: CGPoint(x: randX, y: randY),
-                    //                                                     radius: CGFloat(segmentLength),
-                    //                                                     startAngle: 0,
-                    //                                                     endAngle: 2 * .pi,
-                    //                                                     clockwise: true )
                     let singleTrianglePath = UIBezierPath()
                     let point1 = CGPoint(x: randX,
                                          y: randY - segmentLength / CGFloat(3.0.squareRoot()))
@@ -129,7 +121,7 @@ extension UIColor {
                     singleTrianglePath.addLine(to: point2)
                     singleTrianglePath.addLine(to: point3)
                     singleTrianglePath.close()
-                   
+                    
                     singleTriangleLayer.path = singleTrianglePath.cgPath
                     singleTriangleLayer.frame = currentGridFrame
                     //singleTriangleLayer.fillColor = colors[(i * numberOfColumns + j) % numberOfColors].cgColor
@@ -140,7 +132,46 @@ extension UIColor {
                     backgroundPatternLayer.addSublayer(singleTriangleLayer)
                 }
             }
-            
+        case .Ring:
+            let innerRadius : CGFloat = 2
+            let outterRadius : CGFloat = 4
+            for i in 0..<numberOfRows {
+                for j in 0..<numberOfColumns{
+                    let currentGridFrame = CGRect(x: CGFloat(i) * widthOfGrid,
+                                                  y: CGFloat(j) * heightOfGrid,
+                                                  width: widthOfGrid,
+                                                  height: heightOfGrid)
+                    
+                    //let randX = Int(arc4random_uniform(UInt32(currentGridFrame.size.width - dotRadius)))
+                    let randomXRange = outterRadius/2..<currentGridFrame.size.width-outterRadius/2
+                    let randomYRange = outterRadius/2..<currentGridFrame.size.height-outterRadius/2
+                    let randX = CGFloat.random(in: randomXRange)
+                    let randY = CGFloat.random(in: randomYRange)
+                    
+                    let ringLayer = CAShapeLayer()
+                    
+                    let innerCirclePath = UIBezierPath(arcCenter: CGPoint(x: randX, y: randY),
+                                                       radius: innerRadius,
+                                                       startAngle: 0,
+                                                       endAngle: 2 * .pi,
+                                                       clockwise: true )
+                    let outterCirclePath = UIBezierPath(arcCenter: CGPoint(x: randX, y: randY),
+                                                        radius: outterRadius,
+                                                        startAngle: 0,
+                                                        endAngle: 2 * .pi,
+                                                        clockwise: true )
+                    let ringPath = UIBezierPath()
+                    ringPath.append(innerCirclePath)
+                    ringPath.append(outterCirclePath)
+                    
+                    ringLayer.path = ringPath.cgPath
+                    ringLayer.frame = currentGridFrame
+                    ringLayer.fillRule = CAShapeLayerFillRule.evenOdd
+                    ringLayer.fillColor = colors.sample?.cgColor
+                    ringLayer.backgroundColor = UIColor.clear.cgColor
+                    backgroundPatternLayer.addSublayer(ringLayer)
+                }
+            }
         default:
             break
         }
