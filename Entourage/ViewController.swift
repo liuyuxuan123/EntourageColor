@@ -16,10 +16,10 @@ class ViewController: UIViewController {
         let aSubview = UIView(frame: CGRect(x: 50, y: 150, width: 500, height: 500))
         self.view.addSubview(aSubview)
        
-        aSubview.backgroundColor = UIColor(withPattern: .Dot, withDensity: .Tight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
+        aSubview.backgroundColor = UIColor(withPattern: .Triangle, withDensity: .Tight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
         
         
-        let bSubview = UIView(frame: CGRect(x: 50, y: 700, width: 200, height: 200))
+        let bSubview = UIView(frame: CGRect(x: 50, y: 700, width: 50, height: 50))
         self.view.addSubview(bSubview)
         
         bSubview.backgroundColor = UIColor(withPattern: .Dot, withDensity: .ExtremelyTight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
