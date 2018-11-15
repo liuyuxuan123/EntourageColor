@@ -11,6 +11,7 @@
 		31010CCA219CE16900D2F36E /* EntourageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CC9219CE16900D2F36E /* EntourageUtils.swift */; };
 		31010CCC219CE1D300D2F36E /* EntourageRandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CCB219CE1D300D2F36E /* EntourageRandomColor.swift */; };
 		31010CCE219CE2C600D2F36E /* EntourageColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CCD219CE2C600D2F36E /* EntourageColorScheme.swift */; };
+		31010CD0219CE39300D2F36E /* EntouragePatternColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */; };
 		3117028E218F3D350034BBD1 /* Entourage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117028D218F3D350034BBD1 /* Entourage.png */; };
 		311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CE4CC219AA6880019731B /* PokemonColor.swift */; };
 		31D6A2E2218A11E800E92BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		31010CC9219CE16900D2F36E /* EntourageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntourageUtils.swift; sourceTree = "<group>"; };
 		31010CCB219CE1D300D2F36E /* EntourageRandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntourageRandomColor.swift; sourceTree = "<group>"; };
 		31010CCD219CE2C600D2F36E /* EntourageColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntourageColorScheme.swift; sourceTree = "<group>"; };
+		31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntouragePatternColor.swift; sourceTree = "<group>"; };
 		3117028C218F36360034BBD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3117028D218F3D350034BBD1 /* Entourage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entourage.png; sourceTree = "<group>"; };
 		311CE4CC219AA6880019731B /* PokemonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonColor.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
+				31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */,
 				31010CCD219CE2C600D2F36E /* EntourageColorScheme.swift */,
 				31010CC7219CE14000D2F36E /* EntourageGradientColor.swift */,
 				31010CCB219CE1D300D2F36E /* EntourageRandomColor.swift */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D6A2F4218A121900E92BD8 /* EntourageColor.swift in Sources */,
+				31010CD0219CE39300D2F36E /* EntouragePatternColor.swift in Sources */,
 				31010CC8219CE14000D2F36E /* EntourageGradientColor.swift in Sources */,
 				311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */,
 				31010CCE219CE2C600D2F36E /* EntourageColorScheme.swift in Sources */,

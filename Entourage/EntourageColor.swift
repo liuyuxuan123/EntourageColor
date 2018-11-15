@@ -412,20 +412,7 @@ extension UIColor {
     
     // Broadly speaking, iOS developers mostly work with CALayer through the layer property of their views – things like rounding corners, adding borders, and drawing shadows can all be done there.
     // Initialzation require the size of the field
-//    convenience init(withPatternType dot, withFrame frame: CGRect, withColors colors: Array<UIColor>){
-//        
-//        // Create our background gradient layer
-//        let backgroundGradientLayer = CAGradientLayer()
-//        // Set the frame to our object's size (This is important for the result)
-//        backgroundGradientLayer.frame = frame
-//        // CAGradientLayer using CGColor instead of UIColor
-//        var cgColors = [CGColor]()
-//        for color in colors {
-//            cgColors.append(color.cgColor)
-//        }
-//        
-//    
-//    }
+
 }
 
 
