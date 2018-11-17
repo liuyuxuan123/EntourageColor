@@ -55,9 +55,9 @@
 		31D6A2D5218A11E800E92BD8 = {
 			isa = PBXGroup;
 			children = (
+				3117028C218F36360034BBD1 /* README.md */,
 				31D6A2E0218A11E800E92BD8 /* Entourage */,
 				31D6A2DF218A11E800E92BD8 /* Products */,
-				3117028C218F36360034BBD1 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
