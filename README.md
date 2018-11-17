@@ -12,17 +12,12 @@ A few motivating and useful examples of how your product can be used. Spice this
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
-Put _EntourageColor.swift_ into your project to get all extended colors.
-
-Put _EntourageColorUtils.swift_ into your project to get all extended utility functions.
-
-Put _EntourageGradientColor.swift_ into your project to get all gradient colors.
-
-Put _EntourageRandomColor.swift_ into your project to get all random colors.
-
-Put _EntouragePatternColor.swift_ into your project to get all pattern colors.
-
-Put _PokemonCOlor.swift_ into your project to get color scheme of pokemon.
+Put _EntourageColor.swift_ into your project to get all extended colors.<br/>
+Put _EntourageColorUtils.swift_ into your project to get all extended utility functions.<br/>
+Put _EntourageGradientColor.swift_ into your project to get all gradient colors.<br/>
+Put _EntourageRandomColor.swift_ into your project to get all random colors.<br/>
+Put _EntouragePatternColor.swift_ into your project to get all pattern colors.<br/>
+Put _PokemonCOlor.swift_ into your project to get color scheme of pokemon.<br/>
 
 
 
