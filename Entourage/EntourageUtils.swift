@@ -111,7 +111,7 @@ extension UIColor {
     }
 }
 
-
+// Fetch UIColor by the Name of Color 
 extension UIColor {
     public convenience init?(name: String) {
         let allColors = [
@@ -266,7 +266,6 @@ extension UIColor {
         ]
         
         let cleanedName = name.replacingOccurrences(of: " ", with: "").lowercased()
-        
         if let hexString = allColors[cleanedName] {
             self.init(hexCode: hexString)
         } else {
