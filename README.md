@@ -12,7 +12,7 @@ A few motivating and useful examples of how your product can be used. Spice this
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
-```swift
+```
 Add EntourageColor.swift into your project to get all extended colors.
 Add EntourageColorUtils.swift into your project to get all extended utility functions.
 Add EntourageGradientColor.swift into your project to get all gradient colors.
