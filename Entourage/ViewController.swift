@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         let bSubview = UIView(frame: CGRect(x: 50, y: 700, width: 50, height: 50))
         self.view.addSubview(bSubview)
         
-        bSubview.backgroundColor = UIColor(withPattern: .Dot, withDensity: .ExtremelyTight, withColors: [UIColor.RedWoodRed,UIColor.DarkRed,UIColor.MayaBlue])
-        
+        bSubview.backgroundColor = UIColor(name: "steelblue")
+    
     }
 }
 
