@@ -13,6 +13,7 @@ extension UIColor {
     //  Pattern Types
     enum UIPatternStyle {
         case Dot
+        case BlackDot
         case Star
         case Triangle
         case Ring
@@ -31,7 +32,7 @@ extension UIColor {
     }
     
     // Maybe U Want to Use a Randomly Generated Pattern Color
-    convenience init(withPattern pattern: UIPatternStyle, withDensity density: UIPatternDensity, withColors colors: Array<UIColor>){
+    convenience init(withPattern pattern: UIPatternStyle, withDensity density: UIPatternDensity, withColors colors: Array<UIColor>?){
         
         // Default density is
         // In a UIView of 100 x 100 it contain 25 points
@@ -50,7 +51,7 @@ extension UIColor {
                                                          green: 245.0 / 255.0,
                                                          blue: 240.0 / 255.0,
                                                          alpha: 1.0).cgColor
-        let numberOfColors = colors.count
+        let numberOfColors = colors?.count ?? 1
         // These points must be evenly distributed in one plane and
         // kept at a certain distance in the plane
         
@@ -90,11 +91,43 @@ extension UIColor {
                                                      clockwise: true )
                     singleDotLayer.path = singleDotPath.cgPath
                     singleDotLayer.frame = currentGridFrame
-                    singleDotLayer.fillColor = colors[(i * numberOfColumns + j) % numberOfColors].cgColor
+                    singleDotLayer.fillColor = colors?[(i * numberOfColumns + j) % numberOfColors].cgColor ?? UIColor.black.cgColor
                     singleDotLayer.backgroundColor = UIColor.clear.cgColor
                     backgroundPatternLayer.addSublayer(singleDotLayer)
                 }
             }
+        case .BlackDot:
+            let dotRadius : CGFloat = 2
+            let dotLayer = CAShapeLayer()
+            let dotPath = UIBezierPath()
+            for i in 0..<numberOfRows {
+                for j in 0..<numberOfColumns{
+                    let currentGridFrame = CGRect(x: CGFloat(i) * widthOfGrid,
+                                                  y: CGFloat(j) * heightOfGrid,
+                                                  width: widthOfGrid,
+                                                  height: heightOfGrid)
+                    
+                    let centerX = currentGridFrame.midX
+                    let centerY = currentGridFrame.midY
+                 
+    
+                    let singleDotPath = UIBezierPath(arcCenter: CGPoint(x: centerX, y: centerY),
+                                                     radius: CGFloat(dotRadius),
+                                                     startAngle: 0,
+                                                     endAngle: 2 * .pi,
+                                                     clockwise: true )
+                    
+                    dotPath.append(singleDotPath)
+                }
+            }
+            
+            dotLayer.path = dotPath.cgPath
+           // dot.frame = currentGridFrame
+            dotLayer.fillColor = UIColor.black.cgColor
+            dotLayer.backgroundColor = UIColor.clear.cgColor
+            dotLayer.frame = patternFrame
+            backgroundPatternLayer.addSublayer(dotLayer)
+            
         case .Triangle:
             let segmentLength : CGFloat = 6.0
             
@@ -125,7 +158,7 @@ extension UIColor {
                     singleTriangleLayer.path = singleTrianglePath.cgPath
                     singleTriangleLayer.frame = currentGridFrame
                     //singleTriangleLayer.fillColor = colors[(i * numberOfColumns + j) % numberOfColors].cgColor
-                    singleTriangleLayer.fillColor = colors.sample?.cgColor
+                    singleTriangleLayer.fillColor = colors?.sample?.cgColor ?? UIColor.black.cgColor
                     singleTriangleLayer.transform = CATransform3DMakeRotation(CGFloat.random(in: 0..<(CGFloat.pi / 3)), 0.0, 0.0, 1.0)
                     
                     singleTriangleLayer.backgroundColor = UIColor.clear.cgColor
@@ -167,7 +200,7 @@ extension UIColor {
                     ringLayer.path = ringPath.cgPath
                     ringLayer.frame = currentGridFrame
                     ringLayer.fillRule = CAShapeLayerFillRule.evenOdd
-                    ringLayer.fillColor = colors.sample?.cgColor
+                    ringLayer.fillColor = colors?.sample?.cgColor ?? UIColor.black.cgColor
                     ringLayer.backgroundColor = UIColor.clear.cgColor
                     backgroundPatternLayer.addSublayer(ringLayer)
                 }
@@ -239,7 +272,7 @@ extension UIColor {
                     
                     starLayer.path = starPath.cgPath
                     starLayer.frame = currentGridFrame
-                    starLayer.fillColor = colors.sample?.cgColor
+                    starLayer.fillColor = colors?.sample?.cgColor ?? UIColor.black.cgColor
                     starLayer.backgroundColor = UIColor.clear.cgColor
                     backgroundPatternLayer.addSublayer(starLayer)
                 }
