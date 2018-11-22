@@ -11,7 +11,7 @@ import UIKit
 
 // Color Scheme of Pokemon
 extension UIColor {
-    
+    // Pokemon is the best !!!
     class var Bulbasaur:[UIColor]           {    return  [#colorLiteral(red: 0.3843137254901961, green: 0.8352941176470589, blue: 0.7058823529411765, alpha: 1),#colorLiteral(red: 0.5137254901960784, green: 0.9333333333333333, blue: 0.7725490196078432, alpha: 1),#colorLiteral(red: 0.09411764705882353, green: 0.2901960784313726, blue: 0.2901960784313726, alpha: 1),#colorLiteral(red: 0.45098039215686275, green: 0.6745098039215687, blue: 0.19215686274509805, alpha: 1)]    }
     class var Ivysaur:[UIColor]             {    return  [#colorLiteral(red: 0.35294117647058826, green: 0.803921568627451, blue: 0.7411764705882353, alpha: 1),#colorLiteral(red: 0.19215686274509805, green: 0.4823529411764706, blue: 0.3215686274509804, alpha: 1),#colorLiteral(red: 0.06274509803921569, green: 0.2901960784313726, blue: 0.2235294117647059, alpha: 1),#colorLiteral(red: 0.8352941176470589, green: 0.2549019607843137, blue: 0.35294117647058826, alpha: 1)]    }
     class var Venusaur:[UIColor]            {    return  [#colorLiteral(red: 0.06274509803921569, green: 0.3215686274509804, blue: 0.2549019607843137, alpha: 1),#colorLiteral(red: 1.0, green: 0.4823529411764706, blue: 0.45098039215686275, alpha: 1),#colorLiteral(red: 0.06274509803921569, green: 0.4823529411764706, blue: 0.41568627450980394, alpha: 1),#colorLiteral(red: 0.35294117647058826, green: 0.611764705882353, blue: 0.2235294117647059, alpha: 1)]    }
