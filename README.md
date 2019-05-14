@@ -13,13 +13,10 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 ```
-Add EntourageColor.swift into your project to get all extended colors.
-Add EntourageColorUtils.swift into your project to get all extended utility functions.
-Add EntourageGradientColor.swift into your project to get all gradient colors.
-Add EntourageRandomColor.swift into your project to get all random colors.
-Add EntouragePatternColor.swift into your project to get all pattern colors.
-Add PokemonCOlor.swift into your project to get color scheme of pokemon.
+
+
 ```
+
 
 
 ## Release History
