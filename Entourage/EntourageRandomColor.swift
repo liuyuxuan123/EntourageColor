@@ -50,9 +50,9 @@ private extension UIColor {
         .FossilGray,.MinkGray,.PearlGray,.AbaloneGray,.HarborGray,.SmokeGray,.ThunderGray,.PewterGray,.SteelGray,.StoneGray,.IronGray,.RhinoGray,.TroutGray,.SealGray,.LavaGray,.ShadowGray,.AshGray,.AnchorGray,.CharcoalGray,
         ]
     
-    static let randomChineseTraditionColors : [UIColor] = [
-        .Chengdehui,.Yuanqing,.Qianzonghui,.Ganshifen,.Zitenghui,.Dianlan,.Shenzhuyue,.Tianqing,.Biyushi,.Jianghuang,.Meiguihong,.Qianjiehuang,.Qiantengzi,.Qianxieya,.Baifanghuilan,.Kongquelan,.Dailan,.Huaqing,.Meiguihui,.Shenyan,.Xiangsihui,.Zhizong,.Qiantuose,.Zongcha,.Yadanqing,.Shiyangjin,.Tenghuang,.Xiuhong,.Baicaoshuang,.Baolan,.Canghuang,.Beijingmaolab,.Canglv,
-        ]
+//    static let randomChineseTraditionColors : [UIColor] = [
+//        .Chengdehui,.Yuanqing,.Qianzonghui,.Ganshifen,.Zitenghui,.Dianlan,.Shenzhuyue,.Tianqing,.Biyushi,.Jianghuang,.Meiguihong,.Qianjiehuang,.Qiantengzi,.Qianxieya,.Baifanghuilan,.Kongquelan,.Dailan,.Huaqing,.Meiguihui,.Shenyan,.Xiangsihui,.Zhizong,.Qiantuose,.Zongcha,.Yadanqing,.Shiyangjin,.Tenghuang,.Xiuhong,.Baicaoshuang,.Baolan,.Canghuang,.Beijingmaolab,.Canglv,
+//        ]
 }
 
 
@@ -110,8 +110,6 @@ extension UIColor {
     static func randomGrayColor() -> UIColor {
         return randomColor(in: UIColor.randomVitalColors, withKey: "previousRandomGrayColors")
     }
-    static func randomChineseTraditionColor() -> UIColor {
-        return randomColor(in: UIColor.randomChineseTraditionColors, withKey: "previousRandomChineseTraditionColors")
-    }
+    
     
 }

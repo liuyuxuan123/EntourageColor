@@ -14,8 +14,6 @@
 		31010CD0219CE39300D2F36E /* EntouragePatternColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */; };
 		3117028E218F3D350034BBD1 /* Entourage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117028D218F3D350034BBD1 /* Entourage.png */; };
 		311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CE4CC219AA6880019731B /* PokemonColor.swift */; };
-		31D1179721C6195100B28B12 /* EntourageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1179621C6195100B28B12 /* EntourageTests.swift */; };
-		31D1179F21C619AA00B28B12 /* EntourageGradientColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1179E21C619AA00B28B12 /* EntourageGradientColorTests.swift */; };
 		31D6A2E2218A11E800E92BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */; };
 		31D6A2E4218A11E800E92BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2E3218A11E800E92BD8 /* ViewController.swift */; };
 		31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D6A2E5218A11E800E92BD8 /* Main.storyboard */; };
@@ -44,9 +42,6 @@
 		3117028D218F3D350034BBD1 /* Entourage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entourage.png; sourceTree = "<group>"; };
 		311CE4CC219AA6880019731B /* PokemonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonColor.swift; sourceTree = "<group>"; };
 		31D1179421C6195100B28B12 /* EntourageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntourageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D1179621C6195100B28B12 /* EntourageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntourageTests.swift; sourceTree = "<group>"; };
-		31D1179821C6195100B28B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31D1179E21C619AA00B28B12 /* EntourageGradientColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntourageGradientColorTests.swift; sourceTree = "<group>"; };
 		31D6A2DE218A11E800E92BD8 /* Entourage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entourage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6A2E1218A11E800E92BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D6A2E3218A11E800E92BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,22 +70,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31D1179521C6195100B28B12 /* EntourageTests */ = {
-			isa = PBXGroup;
-			children = (
-				31D1179E21C619AA00B28B12 /* EntourageGradientColorTests.swift */,
-				31D1179621C6195100B28B12 /* EntourageTests.swift */,
-				31D1179821C6195100B28B12 /* Info.plist */,
-			);
-			path = EntourageTests;
-			sourceTree = "<group>";
-		};
 		31D6A2D5218A11E800E92BD8 = {
 			isa = PBXGroup;
 			children = (
 				3117028C218F36360034BBD1 /* README.md */,
 				31D6A2E0218A11E800E92BD8 /* Entourage */,
-				31D1179521C6195100B28B12 /* EntourageTests */,
 				31D6A2DF218A11E800E92BD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,8 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D1179F21C619AA00B28B12 /* EntourageGradientColorTests.swift in Sources */,
-				31D1179721C6195100B28B12 /* EntourageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

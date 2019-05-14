@@ -211,42 +211,40 @@ extension UIColor {
     class  var CharcoalGray: UIColor        {    return #colorLiteral(red: 0.1333333333, green: 0.1254901961, blue: 0.1294117647, alpha: 1)    }
     
     // MARK: Chinese Tradition Colors
-    class  var Chengdehui: UIColor          {    return #colorLiteral(red: 0.4588235294, green: 0.4588235294, blue: 0.4392156863, alpha: 1)    }  //  承德灰
-    class  var Yuanqing: UIColor            {    return #colorLiteral(red: 0.2431372549, green: 0.2352941176, blue: 0.2392156863, alpha: 1)    }  //  元青
-    class  var Qianzonghui: UIColor         {    return #colorLiteral(red: 0.8823529412, green: 0.8588235294, blue: 0.8039215686, alpha: 1)    }  //  浅棕灰
-    class  var Ganshifen: UIColor           {    return #colorLiteral(red: 0.9176470588, green: 0.862745098, blue: 0.8392156863, alpha: 1)    }  //  甘石粉
-    class  var Zitenghui: UIColor           {    return #colorLiteral(red: 0.5215686275, green: 0.4941176471, blue: 0.5843137255, alpha: 1)    }  //  紫藤灰
-    class  var Dianlan: UIColor             {    return #colorLiteral(red: 0.1058823529, green: 0.3294117647, blue: 0.9490196078, alpha: 1)    }  //  靛蓝
-    class  var Shenzhuyue: UIColor          {    return #colorLiteral(red: 0.1450980392, green: 0.4705882353, blue: 0.7098039216, alpha: 1)    }  //  深竹月
-    class  var Tianqing: UIColor            {    return #colorLiteral(red: 0.1803921569, green: 0.7647058824, blue: 0.9058823529, alpha: 1)    }  //  天青
-    class  var Biyushi: UIColor             {    return #colorLiteral(red: 0.337254902, green: 0.5843137255, blue: 0.5921568627, alpha: 1)    }  //  碧玉石
-    class  var Jianghuang: UIColor          {    return #colorLiteral(red: 0.7058823529, green: 0.5803921569, blue: 0.2117647059, alpha: 1)    }  //  姜黄
-    class  var Meiguihong: UIColor          {    return #colorLiteral(red: 0.5921568627, green: 0.2039215686, blue: 0.2666666667, alpha: 1)    }  //  玫瑰红
-    class  var Qianjiehuang: UIColor        {    return #colorLiteral(red: 0.8549019608, green: 0.5843137255, blue: 0.3450980392, alpha: 1)    }  //  浅桔黄
-    class  var Qiantengzi: UIColor          {    return #colorLiteral(red: 0.768627451, green: 0.7647058824, blue: 0.7960784314, alpha: 1)    }  //  浅藤紫
-    class  var Qianxieya: UIColor           {    return #colorLiteral(red: 0.9176470588, green: 0.8039215686, blue: 0.8196078431, alpha: 1)    }  //  浅血牙
-    class  var Baifanghuilan: UIColor       {    return #colorLiteral(red: 0.3058823529, green: 0.09411764706, blue: 0.5725490196, alpha: 1)    }  //  柏坊灰蓝色
-    class  var Kongquelan: UIColor          {    return #colorLiteral(red: 0, green: 0.2549019608, blue: 0.6470588235, alpha: 1)    }  //  孔雀蓝
-    class  var Dailan: UIColor              {    return #colorLiteral(red: 0.1882352941, green: 0.2784313725, blue: 0.3450980392, alpha: 1)    }  //  黛蓝
-    class  var Huaqing: UIColor             {    return #colorLiteral(red: 0.3294117647, green: 0.4196078431, blue: 0.5137254902, alpha: 1)    }  //  花青
-    class  var Meiguihui: UIColor           {    return #colorLiteral(red: 0.4745098039, green: 0.2392156863, blue: 0.337254902, alpha: 1)    }  //  玫瑰灰
-    class  var Shenyan: UIColor             {    return #colorLiteral(red: 0.3529411765, green: 0.2980392157, blue: 0.2980392157, alpha: 1)    }  //  深烟
-    class  var Xiangsihui: UIColor          {    return #colorLiteral(red: 0.3843137255, green: 0.3607843137, blue: 0.3215686275, alpha: 1)    }  //  相思灰
-    class  var Zhizong: UIColor             {    return #colorLiteral(red: 0.737254902, green: 0.6470588235, blue: 0.5647058824, alpha: 1)    }  //  纸棕
-    class  var Qiantuose: UIColor           {    return #colorLiteral(red: 0.7882352941, green: 0.6823529412, blue: 0.5490196078, alpha: 1)    }  //  浅驼色
-    class  var Zongcha: UIColor             {    return #colorLiteral(red: 0.7215686275, green: 0.5176470588, blue: 0.3098039216, alpha: 1)    }  //  棕茶
-    class  var Yadanqing: UIColor           {    return #colorLiteral(red: 0.8196078431, green: 0.8901960784, blue: 0.8588235294, alpha: 1)    }  //  鸭蛋青
-    class  var Shiyangjin: UIColor          {    return #colorLiteral(red: 0.9882352941, green: 0.6941176471, blue: 0.6666666667, alpha: 1)    }  //  十样锦
-    class  var Tenghuang: UIColor           {    return #colorLiteral(red: 0.9490196078, green: 0.8705882353, blue: 0.462745098, alpha: 1)    }  //  藤黄
-    class  var Xiuhong: UIColor             {    return #colorLiteral(red: 0.3019607843, green: 0.09803921569, blue: 0.09803921569, alpha: 1)    }  //  锈红
-    class  var Baicaoshuang: UIColor        {    return #colorLiteral(red: 0.3137254902, green: 0.3137254902, blue: 0.3137254902, alpha: 1)    }  //  百草霜
-    class  var Baolan: UIColor              {    return #colorLiteral(red: 0.1215686275, green: 0.2117647059, blue: 0.5882352941, alpha: 1)    }  //  宝蓝色
-    class  var Canghuang: UIColor           {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍黄色
-    class  var Beijingmaolab: UIColor       {    return #colorLiteral(red: 0.1529411765, green: 0.4039215686, blue: 0.5764705882, alpha: 1)    }  //  北京毛蓝色
-    class  var Canglv: UIColor              {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍绿色
+//    class  var Chengdehui: UIColor          {    return #colorLiteral(red: 0.4588235294, green: 0.4588235294, blue: 0.4392156863, alpha: 1)    }  //  承德灰
+//    class  var Yuanqing: UIColor            {    return #colorLiteral(red: 0.2431372549, green: 0.2352941176, blue: 0.2392156863, alpha: 1)    }  //  元青
+//    class  var Qianzonghui: UIColor         {    return #colorLiteral(red: 0.8823529412, green: 0.8588235294, blue: 0.8039215686, alpha: 1)    }  //  浅棕灰
+//    class  var Ganshifen: UIColor           {    return #colorLiteral(red: 0.9176470588, green: 0.862745098, blue: 0.8392156863, alpha: 1)    }  //  甘石粉
+//    class  var Zitenghui: UIColor           {    return #colorLiteral(red: 0.5215686275, green: 0.4941176471, blue: 0.5843137255, alpha: 1)    }  //  紫藤灰
+//    class  var Dianlan: UIColor             {    return #colorLiteral(red: 0.1058823529, green: 0.3294117647, blue: 0.9490196078, alpha: 1)    }  //  靛蓝
+//    class  var Shenzhuyue: UIColor          {    return #colorLiteral(red: 0.1450980392, green: 0.4705882353, blue: 0.7098039216, alpha: 1)    }  //  深竹月
+//    class  var Tianqing: UIColor            {    return #colorLiteral(red: 0.1803921569, green: 0.7647058824, blue: 0.9058823529, alpha: 1)    }  //  天青
+//    class  var Biyushi: UIColor             {    return #colorLiteral(red: 0.337254902, green: 0.5843137255, blue: 0.5921568627, alpha: 1)    }  //  碧玉石
+//    class  var Jianghuang: UIColor          {    return #colorLiteral(red: 0.7058823529, green: 0.5803921569, blue: 0.2117647059, alpha: 1)    }  //  姜黄
+//    class  var Meiguihong: UIColor          {    return #colorLiteral(red: 0.5921568627, green: 0.2039215686, blue: 0.2666666667, alpha: 1)    }  //  玫瑰红
+//    class  var Qianjiehuang: UIColor        {    return #colorLiteral(red: 0.8549019608, green: 0.5843137255, blue: 0.3450980392, alpha: 1)    }  //  浅桔黄
+//    class  var Qiantengzi: UIColor          {    return #colorLiteral(red: 0.768627451, green: 0.7647058824, blue: 0.7960784314, alpha: 1)    }  //  浅藤紫
+//    class  var Qianxieya: UIColor           {    return #colorLiteral(red: 0.9176470588, green: 0.8039215686, blue: 0.8196078431, alpha: 1)    }  //  浅血牙
+//    class  var Baifanghuilan: UIColor       {    return #colorLiteral(red: 0.3058823529, green: 0.09411764706, blue: 0.5725490196, alpha: 1)    }  //  柏坊灰蓝色
+//    class  var Kongquelan: UIColor          {    return #colorLiteral(red: 0, green: 0.2549019608, blue: 0.6470588235, alpha: 1)    }  //  孔雀蓝
+//    class  var Dailan: UIColor              {    return #colorLiteral(red: 0.1882352941, green: 0.2784313725, blue: 0.3450980392, alpha: 1)    }  //  黛蓝
+//    class  var Huaqing: UIColor             {    return #colorLiteral(red: 0.3294117647, green: 0.4196078431, blue: 0.5137254902, alpha: 1)    }  //  花青
+//    class  var Meiguihui: UIColor           {    return #colorLiteral(red: 0.4745098039, green: 0.2392156863, blue: 0.337254902, alpha: 1)    }  //  玫瑰灰
+//    class  var Shenyan: UIColor             {    return #colorLiteral(red: 0.3529411765, green: 0.2980392157, blue: 0.2980392157, alpha: 1)    }  //  深烟
+//    class  var Xiangsihui: UIColor          {    return #colorLiteral(red: 0.3843137255, green: 0.3607843137, blue: 0.3215686275, alpha: 1)    }  //  相思灰
+//    class  var Zhizong: UIColor             {    return #colorLiteral(red: 0.737254902, green: 0.6470588235, blue: 0.5647058824, alpha: 1)    }  //  纸棕
+//    class  var Qiantuose: UIColor           {    return #colorLiteral(red: 0.7882352941, green: 0.6823529412, blue: 0.5490196078, alpha: 1)    }  //  浅驼色
+//    class  var Zongcha: UIColor             {    return #colorLiteral(red: 0.7215686275, green: 0.5176470588, blue: 0.3098039216, alpha: 1)    }  //  棕茶
+//    class  var Yadanqing: UIColor           {    return #colorLiteral(red: 0.8196078431, green: 0.8901960784, blue: 0.8588235294, alpha: 1)    }  //  鸭蛋青
+//    class  var Shiyangjin: UIColor          {    return #colorLiteral(red: 0.9882352941, green: 0.6941176471, blue: 0.6666666667, alpha: 1)    }  //  十样锦
+//    class  var Tenghuang: UIColor           {    return #colorLiteral(red: 0.9490196078, green: 0.8705882353, blue: 0.462745098, alpha: 1)    }  //  藤黄
+//    class  var Xiuhong: UIColor             {    return #colorLiteral(red: 0.3019607843, green: 0.09803921569, blue: 0.09803921569, alpha: 1)    }  //  锈红
+//    class  var Baicaoshuang: UIColor        {    return #colorLiteral(red: 0.3137254902, green: 0.3137254902, blue: 0.3137254902, alpha: 1)    }  //  百草霜
+//    class  var Baolan: UIColor              {    return #colorLiteral(red: 0.1215686275, green: 0.2117647059, blue: 0.5882352941, alpha: 1)    }  //  宝蓝色
+//    class  var Canghuang: UIColor           {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍黄色
+//    class  var Beijingmaolab: UIColor       {    return #colorLiteral(red: 0.1529411765, green: 0.4039215686, blue: 0.5764705882, alpha: 1)    }  //  北京毛蓝色
+//    class  var Canglv: UIColor              {    return #colorLiteral(red: 0.7843137255, green: 0.3254901961, blue: 0.02352941176, alpha: 1)    }  //  苍绿色
     
-    // More Color
-    // Color name translation
 }
 
 extension UIColor {
