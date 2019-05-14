@@ -19,6 +19,7 @@ Add EntourageGradientColor.swift into your project to get all gradient colors.
 Add EntourageRandomColor.swift into your project to get all random colors.
 Add EntouragePatternColor.swift into your project to get all pattern colors.
 Add PokemonCOlor.swift into your project to get color scheme of pokemon.
+Add Change 
 ```
 
 
