@@ -110,7 +110,6 @@
 				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
 				31ED3F2A228B6F32000DF212 /* Colors.xcassets */,
 				31D6A2ED218A11EB00E92BD8 /* Info.plist */,
-				3117028D218F3D350034BBD1 /* Entourage.png */,
 			);
 			path = Entourage;
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				31ED3F2F228DC68F000DF212 /* AttributesInspector.png */,
+				3117028D218F3D350034BBD1 /* Entourage.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
