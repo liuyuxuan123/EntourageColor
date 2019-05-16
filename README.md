@@ -33,6 +33,10 @@ Add Platte
 3. HSL（色调，饱和度，亮度）
 4. 和更多…
 
+
+
+![](Entourage/images/AttributesInspector.png)
+
 ## Release History
 * 0.0.3
 * Add more function
