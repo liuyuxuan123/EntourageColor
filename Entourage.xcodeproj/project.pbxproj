@@ -21,6 +21,7 @@
 		31D6A2EC218A11EB00E92BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D6A2EA218A11EB00E92BD8 /* LaunchScreen.storyboard */; };
 		31D6A2F4218A121900E92BD8 /* EntourageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2F3218A121900E92BD8 /* EntourageColor.swift */; };
 		31ED3F2B228B6F32000DF212 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F2A228B6F32000DF212 /* Colors.xcassets */; };
+		31ED3F30228DC68F000DF212 /* AttributesInspector.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F2F228DC68F000DF212 /* AttributesInspector.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		31D6A2ED218A11EB00E92BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31D6A2F3218A121900E92BD8 /* EntourageColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntourageColor.swift; sourceTree = "<group>"; };
 		31ED3F2A228B6F32000DF212 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		31ED3F2F228DC68F000DF212 /* AttributesInspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttributesInspector.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		31D6A2E0218A11E800E92BD8 /* Entourage */ = {
 			isa = PBXGroup;
 			children = (
+				31ED3F2C228DC63A000DF212 /* images */,
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
 				31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */,
 				31010CCD219CE2C600D2F36E /* EntourageColorScheme.swift */,
@@ -110,6 +113,14 @@
 				3117028D218F3D350034BBD1 /* Entourage.png */,
 			);
 			path = Entourage;
+			sourceTree = "<group>";
+		};
+		31ED3F2C228DC63A000DF212 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				31ED3F2F228DC68F000DF212 /* AttributesInspector.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				31ED3F2B228B6F32000DF212 /* Colors.xcassets in Resources */,
 				31D6A2EC218A11EB00E92BD8 /* LaunchScreen.storyboard in Resources */,
 				31D6A2E9218A11EB00E92BD8 /* Assets.xcassets in Resources */,
+				31ED3F30228DC68F000DF212 /* AttributesInspector.png in Resources */,
 				3117028E218F3D350034BBD1 /* Entourage.png in Resources */,
 				31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */,
 			);
