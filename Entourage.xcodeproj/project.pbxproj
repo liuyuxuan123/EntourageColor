@@ -25,7 +25,7 @@
 		31ED3F32228F184F000DF212 /* ColorSpace1.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F31228F184E000DF212 /* ColorSpace1.png */; };
 		31ED3F34228F1984000DF212 /* ColorSpace2.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F33228F1984000DF212 /* ColorSpace2.png */; };
 		31ED3F36228F19E9000DF212 /* VitalColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F35228F19E9000DF212 /* VitalColors.xcassets */; };
-		31ED3F38228F1C41000DF212 /* colorGraphic_wideColor.svg in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F37228F1C41000DF212 /* colorGraphic_wideColor.svg */; };
+		31ED3F3A228F1D41000DF212 /* ColorSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F39228F1D41000DF212 /* ColorSpace.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		31ED3F31228F184E000DF212 /* ColorSpace1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSpace1.png; sourceTree = "<group>"; };
 		31ED3F33228F1984000DF212 /* ColorSpace2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSpace2.png; sourceTree = "<group>"; };
 		31ED3F35228F19E9000DF212 /* VitalColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VitalColors.xcassets; sourceTree = "<group>"; };
-		31ED3F37228F1C41000DF212 /* colorGraphic_wideColor.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colorGraphic_wideColor.svg; sourceTree = "<group>"; };
+		31ED3F39228F1D41000DF212 /* ColorSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSpace.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +128,9 @@
 			children = (
 				3117028D218F3D350034BBD1 /* Entourage.png */,
 				31ED3F2F228DC68F000DF212 /* AttributesInspector.png */,
+				31ED3F39228F1D41000DF212 /* ColorSpace.png */,
 				31ED3F31228F184E000DF212 /* ColorSpace1.png */,
 				31ED3F33228F1984000DF212 /* ColorSpace2.png */,
-				31ED3F37228F1C41000DF212 /* colorGraphic_wideColor.svg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -230,8 +230,8 @@
 				31ED3F36228F19E9000DF212 /* VitalColors.xcassets in Resources */,
 				31ED3F32228F184F000DF212 /* ColorSpace1.png in Resources */,
 				31ED3F34228F1984000DF212 /* ColorSpace2.png in Resources */,
+				31ED3F3A228F1D41000DF212 /* ColorSpace.png in Resources */,
 				3117028E218F3D350034BBD1 /* Entourage.png in Resources */,
-				31ED3F38228F1C41000DF212 /* colorGraphic_wideColor.svg in Resources */,
 				31D6A2E7218A11E800E92BD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
