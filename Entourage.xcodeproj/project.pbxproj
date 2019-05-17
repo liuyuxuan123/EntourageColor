@@ -22,7 +22,7 @@
 		31D6A2F4218A121900E92BD8 /* EntourageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A2F3218A121900E92BD8 /* EntourageColor.swift */; };
 		31ED3F2B228B6F32000DF212 /* ChineseTraditionColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F2A228B6F32000DF212 /* ChineseTraditionColors.xcassets */; };
 		31ED3F30228DC68F000DF212 /* AttributesInspector.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F2F228DC68F000DF212 /* AttributesInspector.png */; };
-		31ED3F32228F184F000DF212 /* F06464.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F31228F184E000DF212 /* F06464.png */; };
+		31ED3F32228F184F000DF212 /* #F06464.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F31228F184E000DF212 /* #F06464.png */; };
 		31ED3F34228F1984000DF212 /* 64C864.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F33228F1984000DF212 /* 64C864.png */; };
 		31ED3F36228F19E9000DF212 /* VitalColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F35228F19E9000DF212 /* VitalColors.xcassets */; };
 		31ED3F3A228F1D41000DF212 /* ColorSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3F39228F1D41000DF212 /* ColorSpace.png */; };
@@ -59,7 +59,7 @@
 		31D6A2F3218A121900E92BD8 /* EntourageColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntourageColor.swift; sourceTree = "<group>"; };
 		31ED3F2A228B6F32000DF212 /* ChineseTraditionColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChineseTraditionColors.xcassets; sourceTree = "<group>"; };
 		31ED3F2F228DC68F000DF212 /* AttributesInspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttributesInspector.png; sourceTree = "<group>"; };
-		31ED3F31228F184E000DF212 /* F06464.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = F06464.png; sourceTree = "<group>"; };
+		31ED3F31228F184E000DF212 /* #F06464.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "#F06464.png"; sourceTree = "<group>"; };
 		31ED3F33228F1984000DF212 /* 64C864.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64C864.png; sourceTree = "<group>"; };
 		31ED3F35228F19E9000DF212 /* VitalColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VitalColors.xcassets; sourceTree = "<group>"; };
 		31ED3F39228F1D41000DF212 /* ColorSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSpace.png; sourceTree = "<group>"; };
@@ -105,7 +105,6 @@
 		31D6A2E0218A11E800E92BD8 /* Entourage */ = {
 			isa = PBXGroup;
 			children = (
-				31ED3F2C228DC63A000DF212 /* images */,
 				31D6A2F3218A121900E92BD8 /* EntourageColor.swift */,
 				31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */,
 				31010CCD219CE2C600D2F36E /* EntourageColorScheme.swift */,
@@ -117,9 +116,8 @@
 				31D6A2E3218A11E800E92BD8 /* ViewController.swift */,
 				31D6A2E5218A11E800E92BD8 /* Main.storyboard */,
 				31D6A2EA218A11EB00E92BD8 /* LaunchScreen.storyboard */,
-				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
-				31ED3F2A228B6F32000DF212 /* ChineseTraditionColors.xcassets */,
-				31ED3F35228F19E9000DF212 /* VitalColors.xcassets */,
+				31ED3F2C228DC63A000DF212 /* images */,
+				31ED3F3D228F2437000DF212 /* Assets */,
 				31D6A2ED218A11EB00E92BD8 /* Info.plist */,
 			);
 			path = Entourage;
@@ -131,11 +129,21 @@
 				3117028D218F3D350034BBD1 /* Entourage.png */,
 				31ED3F2F228DC68F000DF212 /* AttributesInspector.png */,
 				31ED3F39228F1D41000DF212 /* ColorSpace.png */,
-				31ED3F31228F184E000DF212 /* F06464.png */,
+				31ED3F31228F184E000DF212 /* #F06464.png */,
 				31ED3F33228F1984000DF212 /* 64C864.png */,
 				31ED3F3B228F21A9000DF212 /* 0000FF.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		31ED3F3D228F2437000DF212 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				31D6A2E8218A11EB00E92BD8 /* Assets.xcassets */,
+				31ED3F2A228B6F32000DF212 /* ChineseTraditionColors.xcassets */,
+				31ED3F35228F19E9000DF212 /* VitalColors.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +240,7 @@
 				31D6A2E9218A11EB00E92BD8 /* Assets.xcassets in Resources */,
 				31ED3F30228DC68F000DF212 /* AttributesInspector.png in Resources */,
 				31ED3F36228F19E9000DF212 /* VitalColors.xcassets in Resources */,
-				31ED3F32228F184F000DF212 /* F06464.png in Resources */,
+				31ED3F32228F184F000DF212 /* #F06464.png in Resources */,
 				31ED3F34228F1984000DF212 /* 64C864.png in Resources */,
 				31ED3F3A228F1D41000DF212 /* ColorSpace.png in Resources */,
 				3117028E218F3D350034BBD1 /* Entourage.png in Resources */,
