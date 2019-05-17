@@ -36,6 +36,14 @@
 <img src="Entourage/images/ColorSpace2.png"><br><br>
 </p>
 
+<table>
+<tr>
+<td ><center><img src="Entourage/images/ColorSpace.png" >图1  新垣结衣1 </center></td>
+<td ><center><img src="Entourage/images/ColorSpace1.png"  >图2 新垣结衣1</center></td>
+<td ><center><img src="Entourage/images/ColorSpace2.png"  >图3 新垣结衣1</center></td>
+</tr>
+</table>
+
 ![](Entourage/images/colorGraphic_wideColor.svg)
 
 
