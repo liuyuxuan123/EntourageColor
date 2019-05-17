@@ -27,7 +27,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk3-Bl-pJf">
                                 <rect key="frame" x="157" y="403" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.39215686274509803" green="0.78431372549019607" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="85T-aU-khp"/>
                                     <constraint firstAttribute="width" secondItem="Wk3-Bl-pJf" secondAttribute="height" id="iFJ-X1-RfV"/>
