@@ -33,7 +33,7 @@
 <p align="center">
 <img src="Entourage/images/ColorSpace.png">
 <img src="Entourage/images/ColorSpace1.png">
-<img src="Entourage/images/ColorSpace2.png">
+<img src="Entourage/images/ColorSpace2.png"><br><br>
 </p>
 
 ![](Entourage/images/colorGraphic_wideColor.svg)
