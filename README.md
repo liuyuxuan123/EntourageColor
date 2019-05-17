@@ -38,7 +38,7 @@
     </td>
     <td >
         <center>
-        <img src="Entourage/images/F.png">1. RGB值同为#F06464
+        <img src="Entourage/images/F06464.png">1. RGB值同为#F06464
         </center>
     </td>
     <td >
