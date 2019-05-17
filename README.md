@@ -38,17 +38,22 @@
     </td>
     <td >
         <center>
-        <img src="Entourage/images/ColorSpace1.png">RGB值同为#F06464
+        <img src="Entourage/images/ColorSpace #F06464.png">1. RGB值同为#F06464
         </center>
     </td>
     <td >
         <center>
-        <img src="Entourage/images/ColorSpace2.png">RGB值同为#64C864
+        <img src="Entourage/images/ColorSpace #64C864.png">2. RGB值同为#64C864
+        </center>
+    </td>
+    <td >
+        <center>
+        <img src="Entourage/images/ColorSpace #0000FF.png">3. RGB值同为#0000FF
         </center>
     </td>
 </tr></table>
 
-![](Entourage/images/colorGraphic_wideColor.svg)
+
 
 
 ## Entourage Color
