@@ -30,8 +30,12 @@
 
 ![](Entourage/images/AttributesInspector.png)
 
-![](Entourage/images/ColorSpace1.png)
-![](Entourage/images/ColorSpace2.png)
+<p align="center">
+<img src="Entourage/images/ColorSpace.png">
+<img src="Entourage/images/ColorSpace1.png">
+<img src="Entourage/images/ColorSpace2.png">
+</p>
+
 ![](Entourage/images/colorGraphic_wideColor.svg)
 
 
