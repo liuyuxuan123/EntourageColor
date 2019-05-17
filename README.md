@@ -38,17 +38,17 @@
     </td>
     <td >
         <center>
-        <img src="Entourage/images/#F06464.png">1. RGB值同为#F06464
+        <img src="Entourage/images/F.png">1. RGB值同为#F06464
         </center>
     </td>
     <td >
         <center>
-        <img src="Entourage/images/#64C864.png">2. RGB值同为#64C864
+        <img src="Entourage/images/64C864.png">2. RGB值同为#64C864
         </center>
     </td>
     <td >
         <center>
-        <img src="Entourage/images/#0000FF.png">3. RGB值同为#0000FF
+        <img src="Entourage/images/0000FF.png">3. RGB值同为#0000FF
         </center>
     </td>
 </tr></table>
