@@ -30,7 +30,9 @@
 
 ![](Entourage/images/AttributesInspector.png)
 
-![](Entourage/images/CompareColorSpace.png)
+![](Entourage/images/ColorSpace1.png)
+![](Entourage/images/ColorSpace2.png)
+![](Entourage/images/colorGraphic_wideColor.svg)
 
 
 ## Entourage Color
