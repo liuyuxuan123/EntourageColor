@@ -14,6 +14,7 @@
 		31010CD0219CE39300D2F36E /* EntouragePatternColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010CCF219CE39300D2F36E /* EntouragePatternColor.swift */; };
 		3117028E218F3D350034BBD1 /* Entourage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117028D218F3D350034BBD1 /* Entourage.png */; };
 		311CE4CD219AA6880019731B /* PokemonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CE4CC219AA6880019731B /* PokemonColor.swift */; };
+		31346F8222ACDCC900C59FCB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31346F8122ACDCC900C59FCB /* Media.xcassets */; };
 		31534ECA22AA8B0800EB57CC /* BirthColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31534EC922AA8B0800EB57CC /* BirthColors.xcassets */; };
 		316AB10422AA636C001C86EC /* GreenColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316AB10322AA636C001C86EC /* GreenColors.xcassets */; };
 		317913F0229D99B900016D00 /* FlatColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317913EF229D99B900016D00 /* FlatColors.xcassets */; };
@@ -50,6 +51,7 @@
 		3117028C218F36360034BBD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3117028D218F3D350034BBD1 /* Entourage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entourage.png; sourceTree = "<group>"; };
 		311CE4CC219AA6880019731B /* PokemonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonColor.swift; sourceTree = "<group>"; };
+		31346F8122ACDCC900C59FCB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		31534EC922AA8B0800EB57CC /* BirthColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BirthColors.xcassets; sourceTree = "<group>"; };
 		316AB10322AA636C001C86EC /* GreenColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GreenColors.xcassets; sourceTree = "<group>"; };
 		317913EF229D99B900016D00 /* FlatColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlatColors.xcassets; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				317913EF229D99B900016D00 /* FlatColors.xcassets */,
 				316AB10322AA636C001C86EC /* GreenColors.xcassets */,
 				31534EC922AA8B0800EB57CC /* BirthColors.xcassets */,
+				31346F8122ACDCC900C59FCB /* Media.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				317913F0229D99B900016D00 /* FlatColors.xcassets in Resources */,
 				31ED3F2B228B6F32000DF212 /* ChineseTraditionColors.xcassets in Resources */,
+				31346F8222ACDCC900C59FCB /* Media.xcassets in Resources */,
 				31D6A2EC218A11EB00E92BD8 /* LaunchScreen.storyboard in Resources */,
 				31ED3F3C228F21A9000DF212 /* 0000FF.png in Resources */,
 				31ED3F30228DC68F000DF212 /* AttributesInspector.png in Resources */,
