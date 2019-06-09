@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="xZp-ot-fRi">
             <objects>
-                <viewController id="GQE-Jc-e3G" sceneMemberID="viewController">
+                <viewController id="GQE-Jc-e3G" customClass="ViewController" customModule="Entourage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uib-un-4xM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +28,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-5W-UQ7">
                                 <rect key="frame" x="107" y="353" width="200" height="200"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="04-26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Dn0-wx-wqJ"/>
                                     <constraint firstAttribute="width" secondItem="U6O-5W-UQ7" secondAttribute="height" id="XQg-WB-N5U"/>
@@ -64,4 +65,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="04-26">
+            <color red="0.47450980392156861" green="0.76078431372549016" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
