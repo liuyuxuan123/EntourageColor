@@ -9,7 +9,7 @@
 <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
 
-## How to set correct color in your project
+## 怎样给你的项目设置正确的颜色
 
 
 为了表示颜色，需要两个组件：
